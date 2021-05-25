@@ -84,6 +84,8 @@ Create a new site from your microsite repo in Netlify:
 
 The site is now deployed on a random URL. To change the URL click **Site settings > Change site name** and enter a name in the format `MYPROJECT-open-docs`. The site will now be available on the URL `https://MYPROJECT-open-docs.netlify.app/`.
 
+### Add deploy preview as comment to pull requests
+
 You can enable the Netlify deploy preview comment for pull requests at once. Still on the site settings, on the left menu click **Build & deploy** > **Deploy notifications**, and verify that 'Add Deploy Preview notifications as pull request comments when Deploy Preview succeeds' is on the list. If it isn't, add it by clicking **Add notification**.
 
 ### Customize the site to use your Github repo and test the GitHub edit links
@@ -263,14 +265,24 @@ You must configure dependabot alerts and security updates for your microsite rep
 4. Click **Save changes**.
 
 
-#### Branch protections
+#### Add rules to protect branches
 
-Your `master` branch must be protected:
+You must add rules to protect the `master` branch:
 
 * It must require pull request reviews before merging (at least 1 review from a technical writer or doc owner)
-* It must require status checks to pass before merging (for the Axway CLA, the Markdown linter, and any **Netlify** checks (Header rules, Pages changed, Redirect rules, Mixed content, deploy/netlify))
+* It must require status checks to pass before merging.
 
 ![Branch protections](/static/Images/microsite_github_protections.png)
+
+After you '[Configure the Netlify app on GitHub](#create-a-new-netlify-microsite)', this makes available a list of Netlify checks that you can add to your branch's protection rules. So, besides **Axway CLA** and **Markdown linter** rules, you can also add:
+
+* Header rules
+* Pages changed
+* Redirect rules
+* Mixed content
+* deploy/netlify
+
+**Note**: The **deploy/netlify** status requires you to add the **Add Deploy Preview notifications to commits when Deploy Preview succeeds** notification in Netlify (**Settings > Build & deploy > Deploy notifications**). If you don't add this notification, this status will block the pull request, the list of checks won't pass.
 
 #### Markdown linting
 
