@@ -65,8 +65,13 @@ function fCheckoutSubmodule() {
     if [[ "${MODE}" == "dev" ]];then
         echo "[INFO] Install npm packages required by docsy."
     	if [[ ! -d "node_modules" ]];then
-    		npm install -D --save autoprefixer
-    		npm install -D --save postcss-cli
+            if [[ -f "package.json" ]];then
+                npm install
+            else
+    		    npm install -D --save autoprefixer
+                npm install -D --save postcss
+    		    npm install -D --save postcss-cli
+            fi
     	fi
     fi
 }
