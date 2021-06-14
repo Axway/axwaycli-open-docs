@@ -274,15 +274,13 @@ You must add rules to protect the `master` branch:
 
 ![Branch protections](/static/Images/microsite_github_protections.png)
 
-After you '[Configure the Netlify app on GitHub](#create-a-new-netlify-microsite)', this makes available a list of Netlify checks that you can add to your branch's protection rules. So, besides **Axway CLA** and **Markdown linter** rules, you can also add:
+After you '[Configure the Netlify app on GitHub](#create-a-new-netlify-microsite)', this makes available a list of Netlify checks that you can add to your branch's protection rules. In addition to enabling the **Axway CLA** and **Markdown linter** rules, you can also enable:
 
 * Header rules
 * Pages changed
 * Redirect rules
 * Mixed content
-* deploy/netlify
-
-**Note**: The **deploy/netlify** status requires you to add the **Add Deploy Preview notifications to commits when Deploy Preview succeeds** notification in Netlify (**Settings > Build & deploy > Deploy notifications**). If you don't add this notification, this status will block the pull request, the list of checks won't pass.
+* deploy/netlify (This rule is dependent on adding the **Add Deploy Preview notifications to commits when Deploy Preview succeeds** notification in Netlify, which you completed in the '[Add deploy preview as comment to pull requests](#add-deploy-preview-as-comment-to-pull-requests)' section. If you don't add this notification, this status will block the pull request and the list of checks won't pass.
 
 #### Markdown linting
 
