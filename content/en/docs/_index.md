@@ -1,6 +1,6 @@
 ---
-title: "Documentation"
-linkTitle: "Documentation"
+title: "Axway CLI Documentation"
+linkTitle: "Axway CLI Documentation"
 weight: 20
 menu:
   main:
