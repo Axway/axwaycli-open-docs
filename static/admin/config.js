@@ -45,7 +45,7 @@ const postDefaults = {
 /**
  * Add new collections here.
  */
-const collections = [{
+/** const collections = [{
   ...docsDefaults('', ''), // content directory, image directory
   name: 'docs',
   label: 'Documentation',
@@ -59,7 +59,37 @@ const collections = [{
     label_singular: 'page in Organization & user management (OUM) section',
     description: 'All pages relating to Organization & user management (OUM)',
     format: 'frontmatter',
-}];
+}];*/
+
+const collections = [{
+  ...docsDefaults('', 'docbook/images/general'), // content directory, image directory
+  name: 'docs',
+  label: 'Documentation',
+  description: 'Top level pages in Axway CLI documentation.',
+  format: 'frontmatter',
+  create: false,
+}, {
+  ...docsDefaults('Extensions', 'Extensions'),
+  name: 'Extensions',
+  label: 'Extensions',
+  label_singular: 'page in Extensions section',
+  description: 'All pages relating to Extensions section.',
+  format: 'frontmatter',
+}, {
+  ...docsDefaults('Organization_&_user_management_(OUM)', 'Organization_&_user_management_(OUM)'),
+  name: 'Organization_&_user_management_(OUM)',
+  label: 'Organization & user management (OUM)',
+  label_singular: 'page in How to section',
+  description: 'All pages relating to How to section.',
+  format: 'frontmatter',
+}, {
+  ...docsDefaults('Release_notes', 'Release_notes'),
+  name: 'Release_notes',
+  label: 'Release notes',
+  label_singular: 'page in Release notes section',
+  description: 'All pages relating to Release notes section.',
+  format: 'frontmatter',
+},];
 
 const cms_branch = window.location.hostname.includes('develop') ? 'develop' : 'master'; // Additional config for a develop branch and develop site
 
