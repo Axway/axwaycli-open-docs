@@ -34,7 +34,7 @@ Installs a package. Multiple versions of the same package may be installed simul
 axway pm install [options] <name>[@<version>]
 ```
 
-**Options**
+#### i, install options
 
 * `--json` - Outputs installed package as JSON
 
@@ -46,7 +46,7 @@ Displays a list of all installed packages.
 axway pm list [options]
 ```
 
-**Options**
+#### ls, list options
 
 * `--json` - Outputs accounts as JSON
 
@@ -58,7 +58,7 @@ Uninstalls all non-active, managed packages. This is useful after installing a n
 axway pm purge [options] [<package>]
 ```
 
-**Options**
+#### purge options
 
 * `--json` - Outputs purged packages as JSON
 
@@ -70,7 +70,7 @@ Searches the registry for a package. If no search criteria is specified, every p
 axway pm search [options] [<keyword>]
 ```
 
-**Options**
+#### s, search options
 
 * `--json` - Outputs packages as JSON
 * `--repository <repo>` - The originating repository
@@ -90,7 +90,7 @@ axway pm uninstall [options] <package>[@<version>]
 
 If no `version` is specified, then all versions of the package are removed.
 
-**Options**
+#### rm, uninstall options
 
 * `--json` - Outputs removed packages as JSON
 
@@ -102,7 +102,7 @@ Checks for package updates, then downloads, installs, and marks them as active.
 axway pm update [options]
 ```
 
-**Options**
+#### update options
 
 * `--json` - Outputs updated packages as JSON
 
@@ -116,7 +116,7 @@ axway pm use [options] <package>[@<version>]
 
 If no `version` is specified, then it will default to the `"latest"` version.
 
-**Options**
+#### use options
 
 * `--json` - Outputs activated package as JSON
 
@@ -132,6 +132,6 @@ If no `version` is specified, then it will default to the `"latest"` version.
 
 The `filter` argument is used to display a specific field such as `"name"` or `"version"`.
 
-**Options**
+#### v, view options
 
 * `--json` - Outputs package info as JSON

@@ -53,11 +53,11 @@ const collections = [{
   format: 'frontmatter',
   create: false,
 }, {
-    ...docsDefaults('Overview', ''),
-    name: 'overview',
-    label: 'Overview',
-    label_singular: 'page in Overview section',
-    description: 'All pages relating to Overview',
+    ...docsDefaults('Organization & user management (OUM)', ''),
+    name: 'Organization & user management (OUM)',
+    label: 'Organization & user management (OUM)',
+    label_singular: 'page in Organization & user management (OUM) section',
+    description: 'All pages relating to Organization & user management (OUM)',
     format: 'frontmatter',
 }];
 

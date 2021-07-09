@@ -1,6 +1,6 @@
 ---
-title: Axway repository cli
-linkTitle: Axway repository cli
+title: Axway Repository CLI
+linkTitle: Axway Repository CLI
 description: ADD A DESCRIPTION
 weight: 20
 date: 2021-07-09
@@ -64,11 +64,11 @@ Displays a list of all Docker images.
 axway repository docker ls [options]
 ```
 
-**ls, list options**
+#### ls, list options
 
 * `--full-names` - Show full image names
 
-**ls, list example**
+#### ls, list example
 
 ```
 IMAGE                                           PRODUCT          TITLE                                DESCRIPTION
@@ -90,7 +90,7 @@ Pulls a Docker image.
 axway repository docker pull
 ```
 
-**pull usage**
+#### pull usage
 
 ```
 axway repository docker pull [options] <image>
@@ -111,7 +111,7 @@ To use the {{% variables/axway_cli_prod_name %}}, you must run the following com
 axway repository docker register
 ```
 
-This registers [http://docker.repository.axway.com](http://docker.repository.axway.com) to your local Docker as the Docker registry and authenticates you on your local Docker CLI.
+This registers `http://docker.repository.axway.com`to your local Docker as the Docker registry and authenticates you on your local Docker CLI.
 
 ### search
 
@@ -121,23 +121,23 @@ Searches for a Docker image.
 axway repository docker search
 ```
 
-**search usage**
+#### search usage
 
 ```
 axway repository docker search [options] <term>
 ```
 
-**search arguments**
+#### search arguments
 
 * `--term` - The image name
 
-**search options**
+#### search options
 
 * `--full-names` - Show image full names
 * `--limit` - Max number of search results
 * `--offset` - Retrieving search results with offset pagination
 
-**search example**
+#### search example
 
 ```
 $ axway repository docker search api
@@ -190,7 +190,7 @@ Lists all available Axway Repository Helm charts.
 axway repository helm ls
 ```
 
-**ls, list example**
+#### ls, list example
 
 ```
 Available entries: 1
@@ -207,13 +207,13 @@ Pulls a Helm chart from the Axway Repository.
 axway repository helm pull
 ```
 
-**pull usage**
+#### pull usage
 
 ```
 axway repository helm pull [options] <chartname>
 ```
 
-**Helm arguments**
+#### Helm arguments
 
 * `--chartname` - Helm chart name
 
@@ -237,23 +237,23 @@ Searches in the Axway Repository.
 axway repository helm search
 ```
 
-**search usage**
+#### search usage
 
 ```
 axway repository helm search [options] <term>
 ```
 
-**serach arguments**
+#### serach arguments
 
 * `--term` - The Helm chart name
 
-**search options**
+#### search options
 
 * `--full-names` - Show image full names
 * `--limit` - Max number of search results
 * `--offset` - Retrieving search results with offset pagination
 
-**search example**
+#### search example
 
 ```
 $ axway repository helm search api

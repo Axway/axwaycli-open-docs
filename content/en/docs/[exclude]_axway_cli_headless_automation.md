@@ -1,8 +1,8 @@
 ---
-title: '[exclude] Headless automation'
-linkTitle: '[exclude] Headless automation'
+title: 'Automation'
+linkTitle: 'Automation'
 description: ADD A DESCRIPTION
-weight: 90
+weight: 65
 date: 2021-07-09
 draft: false
 ---
@@ -15,7 +15,7 @@ Automation scripts need to authenticate to perform certain actions. By default, 
 
 There are two ways to authenticate with a service account: Client Secret and a PEM formatted private key. You will also need to know your service account's Client ID such as "DOSA_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx".
 
-After selecting one of these methods, you then need to specify your platform tooling username and password. Your username is your email address. You can set or change your password on the Tooling Credentials page: [https://platform.axway.com/#/user/credentials](https://platform.axway.com/#/user/credentials). For more information, refer to [Configuring Tooling Credentials](https://confluence.axway.com/display/APUD/Configuring+Tooling+Credentials).
+After selecting one of these methods, you then need to specify your platform tooling username and password. Your username is your email address. You can set or change your password on the Tooling Credentials page: [https://platform.axway.com/#/user/credentials](https://platform.axway.com/#/user/credentials). For more information, refer to [Configuring Tooling Credentials](https://docs.axway.com/bundle/Amplify_Platform_Management_allOS_en/page/configuring_tooling_credentials.html).
 
 ```
 axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email> --password <pass>

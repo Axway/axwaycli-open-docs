@@ -81,7 +81,7 @@ You will also need to configure the proxy server for `npm`:
 npm config set https-proxy http://<username>:<password>@<proxy-server-url>:<port>
 ```
 
-Refer to the [configuration page](/docs/configuration/) for more information.
+Refer to the [configuration](/docs/configuration/) page for more information.
 
 ## Proxy server with self-signed certificate
 
@@ -105,7 +105,7 @@ To log into the Amplify Platform, run:
 axway auth login
 ```
 
-Refer to the [authentication page](https://confluence.axway.com/display/AD/Axway+CLI+Authentication) for more information.
+Refer to the [authentication](/docs/authentication) page for more information.
 
 ## Packages
 

@@ -37,7 +37,7 @@ axway config [--json] <action> [<key>] [<value>]
 * `shift` - Remove the first value in a list
 * `unshift` - Add a value to the beginning of a list
 
-**Options**
+### Options
 
 * `--json` - Output the value as JSON
 

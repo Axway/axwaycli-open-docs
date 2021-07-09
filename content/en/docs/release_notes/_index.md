@@ -4,6 +4,7 @@ linkTitle: Release notes
 description: ADD A DESCRIPTION
 weight: 80
 date: 2021-07-09
+simple_list: true
 ---
 
 {{% variables/axway_cli_prod_name %}} 2.1.0 GA - 11 May 2021 is a minor release that includes new features, improvements, and bug fixes.

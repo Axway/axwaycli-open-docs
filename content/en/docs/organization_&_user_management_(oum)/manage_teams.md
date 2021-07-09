@@ -42,7 +42,7 @@ axway team add <org> <team_name> [options]
 
 You may specify the organization by name or guid. Use double quotes around the team name if the name has spaces or special characters.
 
-**Options**
+#### add options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--default` - Set the team as the default team.
@@ -62,7 +62,7 @@ axway team list [<org>]
 
 By default, the `list` command will use your currently selected organization. To show usage for a specific organization, pass in an organization name or guid.
 
-**Options**
+#### ls, list options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the list of organizations as JSON.
@@ -77,7 +77,7 @@ axway team remove <org> <team>
 
 You may specify the organization by name or guid. Specify the team by its guid.
 
-**Options**
+#### rm, remove options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -92,7 +92,7 @@ axway team update <org> <team> [options]
 
 You may specify the organization by name or guid. Specify the team by its guid.
 
-**Options**
+#### update options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--default` - Set the team as the default team.
@@ -123,7 +123,7 @@ The user must already be a platform user.
 
 An team user must be assigned a platform role and optionally a product specific role. You may specify the roles with multiple `--role "role"`  options or a single `--role "role1,role2,role3"`  option with a comma-separated list of roles. To view available user roles, run: `axway team user roles`.
 
-**Options**
+#### user add options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -139,7 +139,7 @@ axway team user list <org>
 
 You may specify the organization by name or guid.
 
-**Options**
+#### user list options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -154,7 +154,7 @@ axway team user remove <org> <team> <user>
 
 You may specify the organization by name or guid as well as specify the team by guid and user by email address or guid.
 
-**Options**
+#### user remove options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -167,7 +167,7 @@ Displays all available users roles at the team level.
 axway team user roles
 ```
 
-**Options**
+#### user roles options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -184,7 +184,7 @@ The `user update` command requires an organization name or guid, a team guid, th
 
 An organization user must be assigned a platform role and optionally a product specific role. You may specify the roles with multiple `--role "role"`  options or a single `--role "role1,role2,role3"`  option with a comma-separated list of roles. To view available user roles, run: `axway team user roles`.
 
-**Options**
+#### user update options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -200,7 +200,7 @@ axway team view <org> <team>
 
 You may specify the organization by name or guid. Specify the team by its guid.
 
-**Options**
+#### view options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the organization information as JSON.
