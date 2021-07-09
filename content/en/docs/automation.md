@@ -9,7 +9,7 @@ draft: false
 
 The {{% variables/axway_cli_prod_name %}} can be used to automate tasks such as inviting users to an organization and managing teams.
 
-## **Authentication**
+## Authentication
 
 Automation scripts need to authenticate to perform certain actions. By default, the {{% variables/axway_cli_prod_name %}} requires a web browser to authenticate. However using a service account with platform tooling credentials, a script can authenticate headlessly without needing a web browser.
 
@@ -34,13 +34,13 @@ After authenticating, your session is valid for 30 minutes. Your automation scri
 axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email> --password <pass> --force
 ```
 
-## **Exit Codes**
+## Exit Codes
 
 The {{% variables/axway_cli_prod_name %}} returns an exit code of 0 when the command completes successfully and 1 when an error occurs. If an error occurs, the error message is written to `stderr`.
 
 When running a command with the -`h` or --`help` flag, the help is displayed and the process exits with code 2 to prevent unexpected behavior when piping the command into another command.
 
-### JSON Output
+## JSON Output
 
 Most {{% variables/axway_cli_prod_name %}} commands support the `--json` flag. When set, the data as well as any errors are output as JSON. You can pipe the output from one command into a tool such as jq ([https://stedolan.github.io/jq)](https://stedolan.github.io/jq))  and extract a specific value.
 
