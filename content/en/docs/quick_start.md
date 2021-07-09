@@ -1,6 +1,6 @@
 ---
-title: Axway cli quick start
-linkTitle: Axway cli quick start
+title: Quick start
+linkTitle: Quick start
 description: ADD A DESCRIPTION
 weight: 10
 date: 2021-07-09

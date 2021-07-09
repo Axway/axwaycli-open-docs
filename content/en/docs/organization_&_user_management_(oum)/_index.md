@@ -1,6 +1,6 @@
 ---
-title: Axway cli organization & user management (oum)
-linkTitle: Axway cli organization & user management (oum)
+title: Organization & user management (oum)
+linkTitle: Organization & user management (oum)
 description: ADD A DESCRIPTION
 weight: 40
 date: 2021-07-09

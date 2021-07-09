@@ -1,6 +1,6 @@
 ---
-title: Axway cli package management
-linkTitle: Axway cli package management
+title: Package management
+linkTitle: Package management
 description: ADD A DESCRIPTION
 weight: 50
 date: 2021-07-09

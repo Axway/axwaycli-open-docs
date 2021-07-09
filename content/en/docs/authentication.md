@@ -1,6 +1,6 @@
 ---
-title: Axway cli authentication
-linkTitle: Axway cli authentication
+title: Authentication
+linkTitle: Authentication
 description: ADD A DESCRIPTION
 weight: 20
 date: 2021-07-09

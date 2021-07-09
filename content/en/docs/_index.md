@@ -1,6 +1,6 @@
 ---
-title: Axway cli
-linkTitle: Axway cli
+title: Axway CLI
+linkTitle: Axway CLI
 description: ADD A DESCRIPTION
 weight: 10
 date: 2021-07-09

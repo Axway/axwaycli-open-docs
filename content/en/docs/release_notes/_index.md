@@ -1,6 +1,6 @@
 ---
-title: Axway cli release notes
-linkTitle: Axway cli release notes
+title: Release notes
+linkTitle: Release notes
 description: ADD A DESCRIPTION
 weight: 80
 date: 2021-07-09

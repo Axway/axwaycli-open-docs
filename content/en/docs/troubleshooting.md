@@ -1,6 +1,6 @@
 ---
-title: Axway cli troubleshooting
-linkTitle: Axway cli troubleshooting
+title: Troubleshooting
+linkTitle: Troubleshooting
 description: ADD A DESCRIPTION
 weight: 70
 date: 2021-07-09

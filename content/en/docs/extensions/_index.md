@@ -1,6 +1,6 @@
 ---
-title: Axway cli extensions
-linkTitle: Axway cli extensions
+title: Extensions
+linkTitle: Extensions
 description: ADD A DESCRIPTION
 weight: 60
 date: 2021-07-09

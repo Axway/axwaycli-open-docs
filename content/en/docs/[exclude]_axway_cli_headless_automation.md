@@ -1,9 +1,10 @@
 ---
-title: '[exclude] axway cli headless automation'
-linkTitle: '[exclude] axway cli headless automation'
+title: '[exclude] Headless automation'
+linkTitle: '[exclude] Headless automation'
 description: ADD A DESCRIPTION
 weight: 90
 date: 2021-07-09
+draft: false
 ---
 
 The {{% variables/axway_cli_prod_name %}} can be used to automate tasks such as inviting users to an organization and managing teams.
