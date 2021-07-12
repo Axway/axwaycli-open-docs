@@ -243,7 +243,7 @@ axway repository helm search
 axway repository helm search [options] <term>
 ```
 
-#### serach arguments
+#### search arguments
 
 * `--term` - The Helm chart name
 
