@@ -45,23 +45,7 @@ const postDefaults = {
 /**
  * Add new collections here.
  */
-/** const collections = [{
-  ...docsDefaults('', ''), // content directory, image directory
-  name: 'docs',
-  label: 'Documentation',
-  description: 'Top level pages in documentation.',
-  format: 'frontmatter',
-  create: false,
-}, {
-    ...docsDefaults('Organization & user management (OUM)', ''),
-    name: 'Organization & user management (OUM)',
-    label: 'Organization & user management (OUM)',
-    label_singular: 'page in Organization & user management (OUM) section',
-    description: 'All pages relating to Organization & user management (OUM)',
-    format: 'frontmatter',
-}];*/
-
-const collections = [{
+ const collections = [{
   ...docsDefaults('', 'docbook/images/general'), // content directory, image directory
   name: 'docs',
   label: 'Documentation',
@@ -69,22 +53,22 @@ const collections = [{
   format: 'frontmatter',
   create: false,
 }, {
-  ...docsDefaults('Extensions', 'Extensions'),
+  ...docsDefaults('extensions', 'extensions'),
   name: 'Extensions',
   label: 'Extensions',
   label_singular: 'page in Extensions section',
   description: 'All pages relating to Extensions section.',
   format: 'frontmatter',
 }, {
-  ...docsDefaults('Organization_&_user_management_(OUM)', 'Organization_&_user_management_(OUM)'),
-  name: 'Organization_&_user_management_(OUM)',
+  ...docsDefaults('organization_&_user_management_(oum)', 'organization_&_user_management_(oum)'),
+  name: 'organization_&_user_management_(oum)',
   label: 'Organization & user management (OUM)',
-  label_singular: 'page in How to section',
-  description: 'All pages relating to How to section.',
+  label_singular: 'page in Organization & user management (OUM) section',
+  description: 'All pages relating to Organization & user management (OUM) section.',
   format: 'frontmatter',
 }, {
-  ...docsDefaults('Release_notes', 'Release_notes'),
-  name: 'Release_notes',
+  ...docsDefaults('release_notes', 'release_notes'),
+  name: 'release_notes',
   label: 'Release notes',
   label_singular: 'page in Release notes section',
   description: 'All pages relating to Release notes section.',
