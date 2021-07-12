@@ -31,7 +31,7 @@ axway auth ls [options]
 axway auth list [options]
 ```
 
-**Options**
+#### ls, list options
 
 * `--json` : Outputs accounts as JSON
 
@@ -45,7 +45,7 @@ You can be logged into multiple accounts with varying client IDs at the same tim
 axway auth login [options]
 ```
 
-**Options**
+#### login options
 
 * `--client-id`  - The CLI specific client ID
 * `--client-secret <key>` - A secret key issued by Axway
@@ -93,7 +93,7 @@ Revokes access tokens for one, multiple, or all accounts.
 axway auth logout [options] [<accounts...>]
 ```
 
-**Options**
+#### logout options
 
 * `--json` - Outputs revoked accounts as JSON
 
@@ -105,7 +105,7 @@ Once authenticated into at least one account, you can set the default account an
 axway auth switch [options]
 ```
 
-**Options**
+#### switch options
 
 * `--account <name>` - The account to switch to
 * `--json` - Outputs selected account as JSON

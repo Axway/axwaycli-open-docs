@@ -4,6 +4,7 @@ linkTitle: Manage organizations
 description: ADD A DESCRIPTION
 weight: 10
 date: 2021-07-09
+siblings_only: true
 ---
 
 The {{% variables/axway_cli_prod_name %}} `org` command allows you to rename the organization, manage organization users, and view organization information.
@@ -43,7 +44,7 @@ axway org activity [<org>] [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 
 By default, the `activity` command will use your currently selected organization. To show activity for a specific organization, pass in an organization name or guid.
 
-**Options**
+#### activity options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--from <date>` - The start date in ISO format. Defaults to 14 days from today.
@@ -60,7 +61,7 @@ axway org idp [<org>]
 
 By default, the `idp` command will use your currently selected organization. To manage the identity provider settings for a specific organization, pass in an organization name or guid.
 
-**Options**
+#### idp options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 
@@ -74,7 +75,7 @@ axway org ls
 axway org list
 ```
 
-**Options**
+#### ls, list options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the list of organizations as JSON.
@@ -89,7 +90,7 @@ axway org rename <org> <new_name>
 
 You may specify the organization by name or guid. Use double quotes around the new organization name if the name has spaces or special characters.
 
-**Options**
+#### rename options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -104,7 +105,7 @@ axway org usage [<org>] [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 
 By default, the `usage` command will use your currently selected organization. To show usage for a specific organization, pass in an organization name or guid.
 
-**Options**
+#### usage options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--from <date>` - The start date in ISO format. Defaults to 14 days from today.
@@ -133,7 +134,7 @@ If the user is not already a platform user, they will automatically be invited t
 
 An organization user must be assigned a platform role and optionally a product specific role. You may specify the roles with multiple `--role "role"`  options or a single `--role "role1,role2,role3"`  option with a comma-separated list of roles. To view available user roles, run: `axway org user roles`.
 
-**Options**
+#### user add options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -149,7 +150,7 @@ axway org user list <org>
 
 By default, the `user list` command will use your currently selected organization. To show activity for a specific organization, pass in an organization name or guid.
 
-**Options**
+#### user list options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -164,7 +165,7 @@ axway org user remove <org> <user>
 
 You may specify the organization by name or guid as well as specify the user by email address or guid.
 
-**Options**
+#### user remove options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -177,7 +178,7 @@ Displays all available users roles at the organization level.
 axway org user roles
 ```
 
-**Options**
+#### user role options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -194,7 +195,7 @@ The `user update` command requires an organization name or guid, the email addre
 
 An organization user must be assigned a platform role and optionally a product specific role. You may specify the roles with multiple `--role "role"`  options or a single `--role "role1,role2,role3"`  option with a comma-separated list of roles. To view available user roles, run: `axway org user roles`.
 
-**Options**
+#### user update options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -210,7 +211,7 @@ axway org view [<org>]
 
 By default, the `view` command will use your currently selected organization. To show usage for a specific organization, pass in an organization name or guid.
 
-**Options**
+#### view options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the organization information as JSON.

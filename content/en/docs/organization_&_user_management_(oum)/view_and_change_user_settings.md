@@ -34,7 +34,7 @@ Displays user events such as role changes and security related events.
 axway user activity [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 ```
 
-**Options**
+#### activity options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--from <date>` - The start date in ISO format. Defaults to 14 days from today.
@@ -57,7 +57,7 @@ Allows a user to change their first name, last name, and phone number.
 axway user update [--firstname <value>] [--lastname <value>] [--phone <value>]
 ```
 
-**Options**
+#### update options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--firstname <value>` - The first name to set.
@@ -73,7 +73,7 @@ Displays the user's account information.
 axway user view
 ```
 
-**Options**
+#### view options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the activity as JSON.

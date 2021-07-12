@@ -1,6 +1,6 @@
 ---
-title: Organization & user management (oum)
-linkTitle: Organization & user management (oum)
+title: Organization & user management (OUM)
+linkTitle: Organization & user management (OUM)
 description: ADD A DESCRIPTION
 weight: 40
 date: 2021-07-09
