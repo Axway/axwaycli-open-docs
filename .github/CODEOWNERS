@@ -8,7 +8,7 @@
 #*       @global-owner1 @global-owner2
 
 # Global reviewers for this project
-* @microsite-owner @doc-owner
+* @sallylanda6
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
@@ -17,11 +17,11 @@
 #*.js @js-owner
 
 # Config files
-*.html @microsite-owner
-*.js    @microsite-owner
-*.toml @microsite-owner
-*.yml @microsite-owner
-*.json @microsite-owner
+*.html @sallylanda6
+*.js    @sallylanda6
+*.toml @sallylanda6
+*.yml @sallylanda6
+*.json @sallylanda6
 
 # You can also use email addresses if you prefer. They'll be
 # used to look up users just like we do for commit author
@@ -34,11 +34,11 @@
 #/build/logs/ @doctocat
 
 # Theme and CMS config files
-/layouts/ @microsite-owner
-/static/admin/ @microsite-owner
+/layouts/ @sallylanda6
+/static/admin/ @sallylanda6
 
 # Documentation files
-/content/en/docs/ @doc-owner
+/content/en/docs/ @sallylanda6
 
 # The `docs/*` pattern will match files like
 # `docs/getting-started.md` but not further nested files like
