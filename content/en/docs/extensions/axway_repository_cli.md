@@ -56,7 +56,7 @@ axway repository docker <command> [options]
 * `search` - Search the Axway Repository for images
 * `u, unregister` - Unregister the Axway Docker repository to your local native Docker CLI
 
-### ls, list
+### Docker ls, list
 
 Displays a list of all Docker images.
 
@@ -64,11 +64,11 @@ Displays a list of all Docker images.
 axway repository docker ls [options]
 ```
 
-#### ls, list options
+#### Docker s, list options
 
 * `--full-names` - Show full image names
 
-#### ls, list example
+#### Docker ls, list example
 
 ```
 IMAGE                                           PRODUCT          TITLE                                DESCRIPTION
@@ -82,7 +82,7 @@ securetransport-prod/5.5/docker_image_1:latest  SecureTransport  Secure Transpor
 securetransport-prod/1.2/docker_image_1:latest  SecureTransport  test asdf
 ```
 
-### pull
+### Docker pull
 
 Pulls a Docker image.
 
@@ -90,18 +90,17 @@ Pulls a Docker image.
 axway repository docker pull
 ```
 
-#### pull usage
+#### Docker pull usage
 
 ```
 axway repository docker pull [options] <image>
 ```
 
-**
-pull arguments**
+#### Docker pull arguments
 
 * `--image` - Docker image name
 
-### r, register
+### Docker r, register
 
 Registers the Axway Docker repository to your local native Docker CLI.
 
@@ -113,7 +112,7 @@ axway repository docker register
 
 This registers `http://docker.repository.axway.com`to your local Docker as the Docker registry and authenticates you on your local Docker CLI.
 
-### search
+### Docker search
 
 Searches for a Docker image.
 
@@ -121,23 +120,23 @@ Searches for a Docker image.
 axway repository docker search
 ```
 
-#### search usage
+#### Docker search usage
 
 ```
 axway repository docker search [options] <term>
 ```
 
-#### search arguments
+#### Docker search arguments
 
 * `--term` - The image name
 
-#### search options
+#### Docker search options
 
 * `--full-names` - Show image full names
 * `--limit` - Max number of search results
 * `--offset` - Retrieving search results with offset pagination
 
-#### search example
+#### Docker search example
 
 ```
 $ axway repository docker search api
@@ -148,7 +147,7 @@ IMAGE            PRODUCT          TITLE                           DESCRIPTION
 5.5/hello-world  SecureTransport  API Hello world TEST FROM CHAI abv  SecureTransport Docker sfsdf d gfd...
 ```
 
-### u, unregister
+### Docker u, unregister
 
 Unregisters the Axway Docker repository to your local native Docker CLI.
 
@@ -182,7 +181,7 @@ axway repository helm <command> [options]
 * `search` - Search in the Axway Repository
 * `u, unregister` - Unregister the Axway Helm repository to your local native Helm CLI
 
-### ls, list
+### Helm ls, list
 
 Lists all available Axway Repository Helm charts.
 
@@ -190,7 +189,7 @@ Lists all available Axway Repository Helm charts.
 axway repository helm ls
 ```
 
-#### ls, list example
+#### Helm ls, list example
 
 ```
 Available entries: 1
@@ -199,7 +198,7 @@ NAME                               CHART  PRODUCT          TITLE           DESCR
 helm-securetransport-prod-grafana  6.1.4  SecureTransport  helm updated 3  helm updated
 ```
 
-### pull
+### Helm pull
 
 Pulls a Helm chart from the Axway Repository.
 
@@ -207,7 +206,7 @@ Pulls a Helm chart from the Axway Repository.
 axway repository helm pull
 ```
 
-#### pull usage
+#### Helm pull usage
 
 ```
 axway repository helm pull [options] <chartname>
@@ -217,7 +216,7 @@ axway repository helm pull [options] <chartname>
 
 * `--chartname` - Helm chart name
 
-### r, register
+### Helm r, register
 
 Registers the Axway Helm repository to your local native Helm CLI.
 
@@ -229,7 +228,7 @@ axway repository helm register
 
 This registers [http://helm.repository.axway.com](http://helm.repository.axway.com) to your local Helm as the Helm registry and authenticates you on your local Helm CLI.
 
-### search
+### Helm search
 
 Searches in the Axway Repository.
 
@@ -237,23 +236,23 @@ Searches in the Axway Repository.
 axway repository helm search
 ```
 
-#### search usage
+#### Helm search usage
 
 ```
 axway repository helm search [options] <term>
 ```
 
-#### search arguments
+#### Helm search arguments
 
 * `--term` - The Helm chart name
 
-#### search options
+#### Helm search options
 
 * `--full-names` - Show image full names
 * `--limit` - Max number of search results
 * `--offset` - Retrieving search results with offset pagination
 
-#### search example
+#### Helm search example
 
 ```
 $ axway repository helm search api
@@ -264,7 +263,7 @@ NAME     PRODUCT          TITLE               DESCRIPTION
 grafana  SecureTransport  API helm updated 3  helm updated
 ```
 
-### u, unregister
+### Helm u, unregister
 
 Unregisters the Axway Helm repository to your local native Helm CLI.
 

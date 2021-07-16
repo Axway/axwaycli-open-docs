@@ -17,7 +17,6 @@ axway pm <command> [options]
 ## Commands
 
 * `i`, `install` - Install a specific package
-
 * `ls`, `list` - List all installed accounts
 * `purge` - Remove all non-active packages
 * `s`, `search` - Search registry for packages
