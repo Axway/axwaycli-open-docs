@@ -1,14 +1,12 @@
 ---
 title: Organization & user management (OUM)
 linkTitle: Organization & user management (OUM)
-description: ADD A DESCRIPTION
+description: Use the Axway CLI organization and user management commands to manage Amplify Platform organizations, teams and user settings. 
 weight: 40
 date: 2021-07-09
 ---
 
-The {{% variables/axway_cli_prod_name %}} includes a collection of commands for managing Amplify Platform organizations, teams, and user settings.
-
-These commands make it easy to script organization users and teams.
+The organization and user management (OUM) commands make it easy to script organization users and teams.
 
 You must be authenticated into a platform account before using the OUM commands.
 

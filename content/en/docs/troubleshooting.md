@@ -1,12 +1,10 @@
 ---
 title: Troubleshooting
 linkTitle: Troubleshooting
-description: ADD A DESCRIPTION
+description: Troubleshooting includes details on errors and other messages you may receive using the Axway CLI, why the message may have occurred, and suggested methods to resolve the issue.
 weight: 70
 date: 2021-07-09
 ---
-
-The troubleshooting section includes details on error and other messages you may receive using the {{% variables/axway_cli_prod_name %}}, why the message may have occurred, and suggested methods to resolve them.
 
 ## Authentication issues
 

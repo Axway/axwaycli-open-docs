@@ -1,12 +1,10 @@
 ---
 title: Package management
 linkTitle: Package management
-description: ADD A DESCRIPTION
+description: Use the Axway CLI pm command to manage, install, and uninstall packages.
 weight: 50
 date: 2021-07-09
 ---
-
-The {{% variables/axway_cli_prod_name %}} `pm` command allows you to manage, install, and uninstall packages.
 
 ## Usage
 

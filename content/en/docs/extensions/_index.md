@@ -1,7 +1,7 @@
 ---
 title: Extensions
 linkTitle: Extensions
-description: ADD A DESCRIPTION
+description: Install additional packages to extend the Axway CLI.
 weight: 60
 date: 2021-07-09
 ---

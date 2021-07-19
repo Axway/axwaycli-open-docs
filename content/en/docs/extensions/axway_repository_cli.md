@@ -1,12 +1,10 @@
 ---
 title: Axway Repository CLI
 linkTitle: Axway Repository CLI
-description: ADD A DESCRIPTION
+description: Use the Axway Repository CLI extension to the Axway CLI to manage Docker images and Helm charts stored in the Axway repository.
 weight: 20
 date: 2021-07-09
 ---
-
-The Axway Repository CLI is used to manage Docker images and Helm charts stored in the Axway repository.
 
 ## Installation
 

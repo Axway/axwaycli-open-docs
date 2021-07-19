@@ -1,7 +1,7 @@
 ---
 title: Manage teams
 linkTitle: Manage teams
-description: ADD A DESCRIPTION
+description: Use the Axway CLI `teams` commands to manage Platform teams.
 weight: 20
 date: 2021-07-09
 ---
