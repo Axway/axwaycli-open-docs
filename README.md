@@ -8,4 +8,4 @@ This repository contains all files for building and deploying the site. The Mark
 
 We welcome your contributions! To get started, go to <https://axway-open-docs.netlify.app/> and click **Documentation** in the top menu. Browse the documentation and use the options in the right navigation to edit any page using GitHub or Netlify CMS.
 
-Before you start contributing, please read the [contribution guidelines](https://axway-open-docs.netlify.com/docs/contribution_guidelines/).
+Before you start contributing, please read the [contribution guidelines](https://axwaycli-open-docs.netlify.app/docs/contribution_guidelines/).

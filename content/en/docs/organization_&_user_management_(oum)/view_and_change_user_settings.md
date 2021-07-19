@@ -22,7 +22,6 @@ axway user <command> [--account <name>] [options]
 
 * `activity` - Display user's activity
 * `credentials` - Open a web browser to the change your password page
-
 * `update` - Change your information
 * `view` - Display user information
 
