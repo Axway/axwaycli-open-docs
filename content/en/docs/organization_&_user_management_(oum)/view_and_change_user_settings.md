@@ -1,7 +1,7 @@
 ---
 title: View and change user settings
 linkTitle: View and change user settings
-description: Use The Axway CLI `user` command to view your activity and update your account information.
+description: Use the Axway CLI user command to view your activity and update your account information.
 weight: 30
 date: 2021-07-09
 ---

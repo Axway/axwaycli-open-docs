@@ -1,7 +1,7 @@
 ---
 title: Configuration
 linkTitle: Configuration
-description: Use the Axway CLI `config` command to manage configuration values.
+description: Use the Axway CLI config command to manage configuration values.
 weight: 30
 date: 2021-07-09
 ---
@@ -12,7 +12,7 @@ date: 2021-07-09
 | --- | --- | --- | --- |
 | `auth.serverHost` | string | `"localhost"` | The hostname the local web server should listen on and await the successful login browser redirect. |
 | `auth.serverPort` | number | `3000` | The port number the local web server should listen on and await the successful login browser redirect. The value must be between `1024` and `65535`. |
-| `auth.tokenRefreshThreshold` | number | `0` | The number of seconds before the access token expires and should be refreshed. As long as the refresh token is not expired, a new access token can be retrieved. This setting is only useful if the access token is still valid, but almost expired and you need a valid access token for an operation in the near future. The value must be a non-negative integer. |
+| <span style="white-space:nowrap">`auth.tokenRefreshThreshold`</span> | number | `0` | The number of seconds before the access token expires and should be refreshed. As long as the refresh token is not expired, a new access token can be retrieved. This setting is only useful if the access token is still valid, but almost expired and you need a valid access token for an operation in the near future. The value must be a non-negative integer. |
 | `auth.tokenStoreType` | string | `"secure"` | The type of store to persist the access token after authenticating.<br /><br />Allowed values:<br /><br />**auto** - Attempts to use the **secure** store, but falls back to **file** if secure store is unavailable.<br /><br />**secure** - Encrypts the access token using a generated key which is stored in the system's keychain.<br /><br />**file** - Encrypts the access token using the embedded key.<br /><br />**memory** - Stores the access token in memory instead of on disk. The access tokens are lost when the process exits. This is intended for testing purposes only.<br /><br />**null** - Disables all forms of token persistence and only returns the access token. Subsequent calls to login in the same process will force the authentication flow. This is intended for migration scripts and testing purposes only. |
 | `network.caFile` | string |  | The path to a PEM formatted certificate authority bundle used to validate untrusted SSL certificates. |
 | `network.proxy` | string |  | The proxy server URL. This proxy server is used for both HTTP and HTTPS requests.<br /><br />{{% alert title="Note" color="primary" %}}If the proxy server uses a self-signed certificate, you must specify the `network.caFile`, set `network.strictSSL` to `false`, or set the environment variable `NODE_TLS_REJECT_UNAUTHORIZED=0`.{{% /alert %}} |
