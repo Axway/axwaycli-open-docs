@@ -1,7 +1,7 @@
 ---
 title: Manage organizations
 linkTitle: Manage organizations
-description: Use the Axway CLI `org` command to manage Platform organizations.
+description: Use the Axway CLI org command to manage Platform organizations.
 weight: 10
 date: 2021-07-09
 siblings_only: true

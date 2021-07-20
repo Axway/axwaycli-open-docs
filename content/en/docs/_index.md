@@ -38,5 +38,3 @@ The system requirements are:
 ## Next Steps
 
 Install the {{% variables/axway_cli_prod_name %}} and follow the [quick start](/docs/quick_start/) guide.
-
-Jul 08, 2021
