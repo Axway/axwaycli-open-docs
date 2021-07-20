@@ -1,12 +1,10 @@
 ---
 title: Configuration
 linkTitle: Configuration
-description: ADD A DESCRIPTION
+description: Use the Axway CLI `config` command to manage configuration values.
 weight: 30
 date: 2021-07-09
 ---
-
-The {{% variables/axway_cli_prod_name %}} `config` command manages configuration values.
 
 ## Settings
 

@@ -1,7 +1,7 @@
 ---
 title: Quick start
 linkTitle: Quick start
-description: ADD A DESCRIPTION
+description: Install the Axway CLI or upgrade from the Amplify CLI and start using the CLI and its components. 
 weight: 10
 date: 2021-07-09
 ---

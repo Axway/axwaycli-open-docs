@@ -1,7 +1,7 @@
 ---
 title: Authentication
 linkTitle: Authentication
-description: ADD A DESCRIPTION
+description: Use the Axway CLI `auth` command to authenticate with the Amplify Platform.
 weight: 20
 date: 2021-07-09
 ---
