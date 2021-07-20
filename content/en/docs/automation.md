@@ -1,7 +1,7 @@
 ---
 title: 'Automation'
 linkTitle: 'Automation'
-description: You can use the Axway CLI to automate tasks such as inviting users to an organization and managing teams.
+description: Automate tasks such as inviting users to an organization and managing teams.
 weight: 65
 date: 2021-07-09
 draft: true
