@@ -52,13 +52,13 @@ axway auth login [options]
 * `--json` - Outputs authenticated account as JSON
 * `--no-launch-browser` - Display the authentication URL instead of opening it in the default web browser
 
-#### login options - Service Account
+#### login options - service account
 * `-c`, `--client-secret <key>` - The service account's client secret key
 * `-p`, `--password <pass>` - Your Platform Tooling password; requires `--client-secret` or `--secret-file`
 * `-s`, `--secret-file <path>` - Path to the PEM formatted private key
 * `-u`, `--username <email>` - Your email address used to log into the {{% variables/platform_prod_name %}}; requires `--client-secret` or `--secret-file`
 
-### Platform Accounts
+### Platform accounts
 
 A platform account allows you to manage organizations, teams, and your user account. There are two ways to authenticate into a platform account.
 
@@ -70,7 +70,7 @@ PKCE is the default authentication method. It will open a web browser to the {{%
 axway auth login
 ```
 
-### Service Account with Username/Password
+### Service account with username/password
 
 Authenticate headlessly without needing to launch a web browser. You must specify either a Client Secret or a PEM formatted private key along with your Platform Tooling Credentials. You will also need to know your service account's Client ID such as "DOSA_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx".
 
@@ -88,7 +88,7 @@ axway auth login --client-id <id> --secret-file /path/to/pem/file -username <ema
 
 The commands above will prompt you for your password. You may also specify `--password <pass>` for a non-interactive login.
 
-### Service Accounts
+### Service accounts
 
 With a service account, you can headlessly authenticate using a Client Secret or a PEM formatted private key. Service accounts are not able to perform certain actions such as organization and team management.
 
