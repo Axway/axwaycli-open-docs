@@ -17,8 +17,7 @@ axway auth <command> [options]
 ## Commands
 
 * `ls`, `list` - List all authenticated accounts
-* `login` - Log in to the {{% variables/platform_prod_name %}}
-* `logout` - Log out of all or specific accounts
+* `login` - Log in to the {{% variables/platform_prod_name %}* `logout` - Log out of all or specific accounts
 * `switch` - Select default account and organization
 * `whoami` - Display info for an authenticated account
 
