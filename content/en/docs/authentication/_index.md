@@ -17,7 +17,8 @@ axway auth <command> [options]
 ## Commands
 
 * `ls`, `list` - List all authenticated accounts
-* `login` - Log in to the {{% variables/platform_prod_name %}* `logout` - Log out of all or specific accounts
+* `login` - Log in to the {{% variables/platform_prod_name %}
+* `logout` - Log out of all or specific accounts
 * `switch` - Select default account and organization
 * `whoami` - Display info for an authenticated account
 
@@ -39,7 +40,7 @@ axway auth list [options]
 
 Authenticates the {{% variables/axway_cli_prod_name %}} with the {{% variables/platform_prod_name %}} as either a platform account or service account.
 
-You can simultaneously log into a platform account (by the web browser) as well as multiple platform and service accounts using distinct client IDs.
+You can simultaneously log into a platform account (via the web browser) as well as multiple platform and service accounts using distinct client IDs.
 
 ```
 axway auth login [options]
