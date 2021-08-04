@@ -17,7 +17,7 @@ axway auth <command> [options]
 ## Commands
 
 * `ls`, `list` - List all authenticated accounts
-* `login` - Log in to the {{% variables/platform_prod_name %}
+* `login` - Log in to the Amplify Platform
 * `logout` - Log out of all or specific accounts
 * `switch` - Select default account and organization
 * `whoami` - Display info for an authenticated account
@@ -54,6 +54,7 @@ axway auth login [options]
 * `--no-launch-browser` - Display the authentication URL instead of opening it in the default web browser
 
 #### login options - service account
+
 * `-c`, `--client-secret <key>` - The service account's client secret key
 * `-p`, `--password <pass>` - Your Platform Tooling password; requires `--client-secret` or `--secret-file`
 * `-s`, `--secret-file <path>` - Path to the PEM formatted private key
@@ -146,6 +147,7 @@ Display the currently selected account and organization.
 ```
 axway auth whomai
 ```
+
 #### whoami options
 
 * `--json` - Outputs accounts as JSON
