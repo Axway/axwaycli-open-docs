@@ -1,9 +1,9 @@
 ---
 title: Axway Repository CLI
 linkTitle: Axway Repository CLI
-description: Use the Axway Repository CLI extension to the Axway CLI to manage Docker images, Helm charts and Files stored in the Axway Central Repository.
+description: Use the Axway Repository CLI extension to the Axway CLI to manage Docker images, Helm charts, and files stored in the Axway Central Repository.
 weight: 20
-date: 2021-08-03
+date: 2021-07-09
 ---
 
 ## Installation
@@ -28,7 +28,7 @@ Axway repo is the alias for:
 axway repository
 ```
 
-The Axway Repository CLI includes Docker, Helm and Binary repository types.
+The Axway Repository CLI includes Docker, Helm, and binary repository types.
 
 ## Docker
 
@@ -326,7 +326,7 @@ ID                                    TITLE                                     
 
 ### Files download/pull
 
-Download a file or package
+Download a file or package.
 
 ```sh
 axway repository file pull
@@ -346,7 +346,7 @@ axway repository file pull <ID> [options] [<OUTPUT>]
 
 ### Files info
 
-Get file or package additional information
+Get file or package additional information.
 
 ```sh
 axway repository file info
