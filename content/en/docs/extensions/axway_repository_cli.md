@@ -69,18 +69,19 @@ axway repository docker ls [options]
 
 #### Docker ls, list example
 
-```sh
+```
 Entries: 7; Limit: 30; Offset: 0
 
 IMAGE                                                                                     PRODUCT                    TITLE         DESCRIPTION
 docker.repository-dev.axwaytest.net/securetransport-prod/5.5/ucs-controller:rs            SecureTransport            adada         1 azerty
 docker.repository-dev.axwaytest.net/docker-test-34/apimanagement/anm2:5                   Test Firewall/Secure Msgr  23test        Lorem ipsum dolor sit amet, consec...
-docker.repository-dev.axwaytest.net/securetransport-prod/5.5/ucs-controller:APIGOV-16522  SecureTransport            1             1 qwerty
+docker.repository-dev.axwaytest.net/securetransport-prod/5.5/ucs-controller:APIGOV-16522  SecureTransport            1             1 qwerty </br>
 docker.repository-dev.axwaytest.net/docker-test-34/apimanagement/anm2:5                   Test Firewall/Secure Msgr  11889 23test  zLorem ipsum dolor sit amet, conse...
 docker.repository-dev.axwaytest.net/docker-test-3/apimanagement/anm2:@42                  Test Firewall/Secure Msgr  23test        Lorem ipsum dolor sit amet, consec...
 docker.repository-dev.axwaytest.net/docker-test-34/apimanagement/anm2:5                   Test Firewall/Secure Msgr  23test        Lorem ipsum dolor sit amet, consec...
 docker.repository-dev.axwaytest.net/docker-test-3/apimanagement/anm:7.6.3                 Test Firewall/Secure Msgr  test          Lorem ipsum dolor sit amet, consec...
 ```
+
 
 ### Docker pull
 
@@ -137,7 +138,7 @@ axway repository docker search [options] <term>
 
 #### Docker search example
 
-```sh
+```
 $ axway repository docker search api
 
 Available entries: 1
@@ -195,7 +196,7 @@ axway repository helm ls
 
 #### Helm ls, list example
 
-```sh
+```
 Available entries: 1
 
 NAME                               CHART  PRODUCT          TITLE           DESCRIPTION
@@ -316,7 +317,7 @@ axway repository file ls [options]
 
 #### Files ls, list example
 
-```sh
+```
 ID                                    TITLE                                                              TYPE              PRODUCT               VERSION  STATUS  DATE
 2c7948e2-9ddb-4728-ab4d-10aa5b663f1c  SecureTransport 4.9.0 (allOS) updated                              ProductExtension  SecureTransport       4.9.0    GA      2020-10-22T14:37:48.000Z
 3067407d-9d38-4256-977d-876458ff6840  SecureTransport 4.9.0 (aix-power-32)                               ProductExtension  SecureTransport       4.9.0    GA      2020-10-22T14:17:52.000Z
