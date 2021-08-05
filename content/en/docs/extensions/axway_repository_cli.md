@@ -143,7 +143,7 @@ $ axway repository docker search api
 
 Available entries: 1
 
-IMAGE            PRODUCT          TITLE                           DESCRIPTION
+IMAGE            PRODUCT          TITLE                               DESCRIPTION
 5.5/hello-world  SecureTransport  API Hello world TEST FROM CHAI abv  SecureTransport Docker sfsdf d gfd...
 ```
 
