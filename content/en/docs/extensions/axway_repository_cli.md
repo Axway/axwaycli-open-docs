@@ -259,7 +259,7 @@ axway repository helm search [options] <term>
 
 #### Helm search example
 
-```sh
+```
 $ axway repository helm search api
 
 Available entries: 1
@@ -388,7 +388,7 @@ axway repository file search <TERM> [options]
 
 #### Files search example
 
-```sh
+```
 $ axway repository file search api
 
 Entries: 2272; Limit: 30; Offset: 0
