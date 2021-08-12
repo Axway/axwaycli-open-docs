@@ -1,7 +1,7 @@
 ---
 title: Authentication
 linkTitle: Authentication
-description: Use the Axway CLI auth command to authenticate with the Amplify Platform.
+description: Use the Axway CLI auth command to authenticate with the Amplify platform.
 weight: 20
 date: 2021-07-09
 ---
@@ -17,7 +17,7 @@ axway auth <command> [options]
 ## Commands
 
 * `ls`, `list` - List all authenticated accounts
-* `login` - Log in to the Amplify Platform
+* `login` - Log in to the Amplify platform
 * `logout` - Log out of all or specific accounts
 * `switch` - Select default account and organization
 * `whoami` - Display info for an authenticated account

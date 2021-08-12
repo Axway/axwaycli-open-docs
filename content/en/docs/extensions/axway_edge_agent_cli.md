@@ -1,7 +1,7 @@
 ---
 title: Axway Edge Agent CLI
 linkTitle: Axway Edge Agent CLI
-description: Use the Axway Edge Agent CLI extension to the Axway CLI to configure the Amplify Edge Agent to collect and upload subscription usage data to the Amplify Platform.
+description: Use the Axway Edge Agent CLI extension to the Axway CLI to configure the Amplify Edge Agent to collect and upload subscription usage data to the Amplify platform.
 weight: 10
 date: 2021-07-09
 ---

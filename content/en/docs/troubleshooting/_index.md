@@ -54,7 +54,7 @@ C:\Users\<username>\.axway\axway-cli\lib\keytar
 
 ### Error: Fetch user info failed: Response code 401 (Unauthorized)
 
-This is caused by a bug and occurs when you think you have a valid access token, but the Amplify Platform has revoked the access token. This is most likely caused by switching your current selected organization.
+This is caused by a bug and occurs when you think you have a valid access token, but the {{% variables/axway_cli_prod_name %}} has revoked the access token. This is most likely caused by switching your current selected organization.
 
 The workaround is to log out and log back in:
 
