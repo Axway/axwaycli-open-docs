@@ -99,7 +99,7 @@ npm config set strict-ssl false
 
 ## Authentication
 
-To log into the Amplify Platform, run:
+To log into the {{% variables/axway_cli_prod_name %}}, run:
 
 ```
 axway auth login
