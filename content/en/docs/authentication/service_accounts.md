@@ -1,0 +1,200 @@
+---
+title: Service accounts
+linkTitle: Service accounts
+description: Use the Axway CLI service-account command to create and manage service accounts.
+weight: 10
+date: 2021-08-30
+siblings_only: true
+---
+
+The {{% variables/axway_cli_prod_name %}} `service-account` command allows you to create and manage service accounts, generate public/private keypairs, and assign teams.
+
+The `service-account` command requires you to be authenticated into a platform account. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
+
+## Usage
+
+```
+axway service-account
+
+axway service-account <command> [options]
+```
+
+## Commands
+
+* `add-team` - Add a team to a service account
+* `create` - Creates a service account
+* `generate-keypair` - Create a pem formatted public/private key pair
+* `ls`, `list` - Lists all service accounts
+* `rm`, `remove` - Removes a service account
+* `remove-team` - Remove a team from a service account
+* `roles` - View available service account roles
+* `update` - Updates a service account
+* `v`, `view` - View service account details
+
+### add-team
+
+Add an existing team to a service account. When assigning a team, you must also specify the team role.
+
+```
+axway service-account add-team <client-id/name> <team-guid/name> <role>
+```
+
+You may specify the service account by client id or name as well as the team by guid or name. The available team roles can be discovered by running `axway service-account roles`.
+
+#### add-team options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--json` - Outputs result as JSON.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+
+### create
+
+Creates a new service account. A service account requires a name and either a client secret key or a PEM formatted public key.
+
+If the service account name is not specified, then the command will interactively prompt for all values. If prompting is not available, then all required options must passed in at execution.
+
+```
+axway service-account create --name <value> --secret <key>
+
+axway service-account create --name <value> --public-key <path>
+```
+
+Use double quotes around values that contain spaces or special characters.
+
+#### create options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--client-id <id>` - The service account client id.
+* `--desc <value>` - The description of the service account.
+* `--json` - Outputs result as JSON.
+* `--name <value>` - Friendly name to use for display.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+* `--public-key <path>` - The path to the public key.
+* `--role <role>` - Assign one or more organization roles to the service account.
+* `--secret <key>` - A custom client secret key.
+
+### generate-keypair
+
+Create a pem formatted public/private key pair.
+
+```
+axway service-account generate-keypair
+
+axway service-account generate-keypair --public-key <file> --private-key <file> --yes
+```
+
+This command is useful if you do not already have a public/private keypair and you are automating the service account creation.
+
+#### generate-keypair options
+
+* `--json` - Outputs result as JSON.
+* `--private-key <path>` - The file to output the private key to.
+* `--public-key <path>` - The file to output the public key to.
+* `--yes` - Automatic yes to overwrite existing output files and run non-interactively.
+
+### ls, list
+
+Lists all service accounts.
+
+```
+axway service-account ls
+
+axway service-account list
+```
+
+#### ls, list options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--json` - Outputs the list of organizations as JSON.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+
+### rm, remove
+
+Removes a service account.
+
+```
+axway service-account rm <client-id/name>
+
+axway service-account remove <client-id/name>
+```
+
+You may specify the service account by client id or name. Use double quotes around the name if the name has spaces or special characters.
+
+#### rm, rename options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--json` - Outputs the result as JSON.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+
+### remove-team
+
+Remove a team from a service account.
+
+```
+axway service-account remove-team <client-id/name> <team-guid/name>
+```
+
+You may specify the service account by client id or name as well as the team by guid or name.
+
+#### remove-team options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--json` - Outputs result as JSON.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+
+### roles
+
+View available service account organization and teams roles based on the specified organization.
+
+```
+axway service-account roles
+```
+
+#### roles options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--json` - Outputs result as JSON.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+
+### update
+
+Update service account information. Multiple values may be changed in a single call.
+
+You cannot change a service account's authentication method from client secret to public key and vice versa.
+
+You may specify the service account by client id or name.
+
+```
+axway service-account update <name/client-id> --name <new_name> --desc <new_desc> --role <new_role1> --role <new_role2>
+
+axway service-account update <name/client-id> --secret <new_secret>
+
+axway service-account update <name/client-id> --public-key <new_public_key_from_file>
+```
+
+#### update options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--desc <value>` - The description of the service account.
+* `--json` - Outputs result as JSON.
+* `--name <value>` - Friendly name to use for display.
+* `--org <name|id|guid>` - The organization name, id, or guid.
+* `--public-key <path>` - The path to the public key.
+* `--role <role>` - Assign one or more organization roles to the service account.
+* `--secret <key>` - A custom client secret key.
+
+### v, view
+
+View service account details.
+
+```
+axway service-account view <name/client-id>
+
+axway service-account view <name/client-id> --json
+```
+
+#### v, view options
+
+* `--account <name>` - The account to use. Defaults to the selected account.
+* `--json` - Outputs the service account as JSON.
+* `--org <name|id|guid>` - The organization name, id, or guid.
