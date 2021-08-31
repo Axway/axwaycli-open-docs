@@ -9,7 +9,7 @@ siblings_only: true
 
 The {{% variables/axway_cli_prod_name %}} `service-account` command allows you to create and manage service accounts, generate public/private keypairs, and assign teams.
 
-The `service-account` command requires you to be authenticated into a platform account. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
+You must authenticate into a platform account to use the `service-account` command. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
 
 ## Usage
 
@@ -22,18 +22,18 @@ axway service-account <command> [options]
 ## Commands
 
 * `add-team` - Add a team to a service account
-* `create` - Creates a service account
+* `create` - Create a service account
 * `generate-keypair` - Create a pem formatted public/private key pair
-* `ls`, `list` - Lists all service accounts
-* `rm`, `remove` - Removes a service account
+* `ls`, `list` - List all service accounts
+* `rm`, `remove` - Remove a service account
 * `remove-team` - Remove a team from a service account
 * `roles` - View available service account roles
-* `update` - Updates a service account
+* `update` - Update a service account
 * `v`, `view` - View service account details
 
 ### add-team
 
-Add an existing team to a service account. When assigning a team, you must also specify the team role.
+Adds an existing team to a service account. When assigning a team, you must also specify the team role.
 
 ```
 axway service-account add-team <client-id/name> <team-guid/name> <role>
@@ -59,11 +59,11 @@ axway service-account create --name <value> --secret <key>
 axway service-account create --name <value> --secret <key> --client-id <id> --desc "<description>" --role <role1> --role <role2>
 ```
 
-If the service account name is not specified, then the command will interactively prompt for all values. If prompting is not available, then all required options must passed in at execution.
+If the service account name is not specified, then the command interactively prompts for all values. If prompting is not available, then all required options must passed in at execution.
 
-The client id defaults to the specified service account name plus a uuid. You can override this an specify your own client id, however the client id cannot begin with "AASA", "CASA", "DOSA", or "MASA".
+The client id defaults to the specified service account name plus a uuid. You can override this an specify your own client id, however the client id cannot begin with `"AASA"`, `"CASA"`, `"DOSA"`, or `"MASA"`.
 
-Use double quotes around values that contain spaces or special characters. The available organization roles can be discovered by running `axway service-account roles`.
+Use double quotes around values that contain spaces or special characters. Run `axway service-account roles` to discover the available team roles.
 
 #### create options
 
@@ -79,7 +79,7 @@ Use double quotes around values that contain spaces or special characters. The a
 
 ### generate-keypair
 
-Create a pem formatted public/private key pair.
+Creates a pem formatted public/private key pair.
 
 ```
 axway service-account generate-keypair
@@ -124,7 +124,7 @@ axway service-account remove <client-id/name>
 
 You may specify the service account by client id or name. Use double quotes around the name if the name has spaces or special characters.
 
-#### rm, rename options
+#### rm, remove options
 
 * `--account <name>` - The account to use. Defaults to the selected account.
 * `--json` - Outputs the result as JSON.
@@ -132,7 +132,7 @@ You may specify the service account by client id or name. Use double quotes arou
 
 ### remove-team
 
-Remove a team from a service account.
+Removes a team from a service account.
 
 ```
 axway service-account remove-team <client-id/name> <team-guid/name>
@@ -162,7 +162,7 @@ axway service-account roles
 
 ### update
 
-Update service account information. Multiple values may be changed in a single call.
+Updates service account information. Multiple values may be changed in a single call.
 
 ```
 axway service-account update <name/client-id> --name <new_name> --desc <new_desc> --role <new_role1> --role <new_role2>
@@ -174,7 +174,7 @@ axway service-account update <name/client-id> --public-key <new_public_key_from_
 
 You cannot change a service account's authentication method from client secret to public key and vice versa.
 
-You may specify the service account by client id or name. Use double quotes around values that contain spaces or special characters. The available organization roles can be discovered by running `axway service-account roles`.
+You may specify the service account by client id or name. Use double quotes around values that contain spaces or special characters. Run `axway service-account roles` to discover the available team roles.
 
 #### update options
 
