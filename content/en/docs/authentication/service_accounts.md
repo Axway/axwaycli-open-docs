@@ -59,9 +59,9 @@ axway service-account create --name <value> --secret <key>
 axway service-account create --name <value> --secret <key> --client-id <id> --desc "<description>" --role <role1> --role <role2>
 ```
 
-If the service account name is not specified, then the command interactively prompts for all values. If prompting is not available, then all required options must passed in at execution.
+If the service account name is not specified, then the command interactively prompts for all values. If prompting is not available, then all required options must be passed in at execution.
 
-The client id defaults to the specified service account name plus a uuid. You can override this an specify your own client id, however the client id cannot begin with `"AASA"`, `"CASA"`, `"DOSA"`, or `"MASA"`.
+The client id defaults to the specified service account name plus a uuid. You can override this and specify your own client id, however the client id cannot begin with `"AASA"`, `"CASA"`, `"DOSA"`, or `"MASA"`.
 
 Use double quotes around values that contain spaces or special characters. Run `axway service-account roles` to discover the available team roles.
 
