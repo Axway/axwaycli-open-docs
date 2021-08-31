@@ -39,7 +39,7 @@ Adds an existing team to a service account. When assigning a team, you must also
 axway service-account add-team <client-id/name> <team-guid/name> <role>
 ```
 
-You may specify the service account by client id or name as well as the team by guid or name. The available team roles can be discovered by running `axway service-account roles`.
+You may specify the service account by client id or name as well as the team by guid or name. Run `axway service-account roles` to discover the available team roles.
 
 #### add-team options
 
