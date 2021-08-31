@@ -51,15 +51,19 @@ You may specify the service account by client id or name as well as the team by 
 
 Creates a new service account. A service account requires a name and either a client secret key or a PEM formatted public key.
 
-If the service account name is not specified, then the command will interactively prompt for all values. If prompting is not available, then all required options must passed in at execution.
-
 ```
+axway service-account create --name <value> --public-key <path>
+
 axway service-account create --name <value> --secret <key>
 
-axway service-account create --name <value> --public-key <path>
+axway service-account create --name <value> --secret <key> --client-id <id> --desc "<description>" --role <role1> --role <role2>
 ```
 
-Use double quotes around values that contain spaces or special characters.
+If the service account name is not specified, then the command will interactively prompt for all values. If prompting is not available, then all required options must passed in at execution.
+
+The client id defaults to the specified service account name plus a uuid. You can override this an specify your own client id, however the client id cannot begin with "AASA", "CASA", "DOSA", or "MASA".
+
+Use double quotes around values that contain spaces or special characters. The available organization roles can be discovered by running `axway service-account roles`.
 
 #### create options
 
@@ -160,10 +164,6 @@ axway service-account roles
 
 Update service account information. Multiple values may be changed in a single call.
 
-You cannot change a service account's authentication method from client secret to public key and vice versa.
-
-You may specify the service account by client id or name.
-
 ```
 axway service-account update <name/client-id> --name <new_name> --desc <new_desc> --role <new_role1> --role <new_role2>
 
@@ -171,6 +171,10 @@ axway service-account update <name/client-id> --secret <new_secret>
 
 axway service-account update <name/client-id> --public-key <new_public_key_from_file>
 ```
+
+You cannot change a service account's authentication method from client secret to public key and vice versa.
+
+You may specify the service account by client id or name. Use double quotes around values that contain spaces or special characters. The available organization roles can be discovered by running `axway service-account roles`.
 
 #### update options
 
