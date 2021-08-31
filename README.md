@@ -9,3 +9,12 @@ This repository contains all files for building and deploying the site. The Mark
 We welcome your contributions! To get started, go to <https://axway-open-docs.netlify.app/> and click **Documentation** in the top menu. Browse the documentation and use the options in the right navigation to edit any page using GitHub or Netlify CMS.
 
 Before you start contributing, please read the [contribution guidelines](https://axwaycli-open-docs.netlify.app/docs/contribution_guidelines/).
+
+## Safe Use of HTML in Markdown
+
+Markdown supports inline HTML, however only the following HTML is permitted:
+
+| Description    | HTML                                                    |
+| -------------- | ------------------------------------------------------- |
+| Line break     | `<br>`                                                  |
+| Link w/ target | `<a href="https://axway.com/" target="_blank">Axway</a>` |
