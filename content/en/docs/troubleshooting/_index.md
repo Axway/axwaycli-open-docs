@@ -139,7 +139,7 @@ npm i -g --unsafe-perm axway
 
 This issue occurs when logging in using a service account along with your platform tooling credentials. In order to authenticate with the platform, your organization must have one of the following subscriptions: "Application Development", "Runtime Servies", "Cloud Capacity", or "Amplify (base)".
 
-Please contact <fulfillment@axway.com> to have your organization provisioned with the appropriate subscription.
+Please create a ticket in the [Axway Support Portal](https://support.axway.com/) to have your organization provisioned with the appropriate subscription.
 
 ## Installation issues
 
