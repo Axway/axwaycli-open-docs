@@ -10,7 +10,7 @@ date: 2021-07-09
 
 This section includes troubleshooting for authentication issues.
 
-### Error: Amplify Auth requires "libsecret" which must be manually installed.
+### Error: Amplify Auth requires "libsecret" which must be manually installed
 
 The {{% variables/axway_cli_prod_name %}} by default will store your access tokens securely in a file on disk. On Linux, we use a library that requires `libsecret`. To install it, run:
 
@@ -42,7 +42,7 @@ This issue occurs on headless Linux machines, Docker containers, and SSH session
 
 Unfortunately, headless Linux environments are not supported.
 
-### Error: Failed to install keytar@<version>
+### Error: Failed to install keytar@`<version>`
 
 This error occurs when running an auth related command. The  `keytar`  library is likely corrupt or incomplete. You can manually delete the  `keytar` files and rerun the auth command.
 
@@ -214,7 +214,7 @@ The `keytar` files are located at:
 C:\Users\<username>\.axway\axway-cli\lib\keytar
 ```
 
-### prebuild-install WARN install EACCES: permission denied, access '/home/<user>/.npm'
+### prebuild-install WARN install EACCES: permission denied, access '/home/`<user>`/.npm'
 
 When installing the {{% variables/axway_cli_prod_name %}} on a macOS or Linux machine, npm may run into permission issues installing the {{% variables/axway_cli_prod_name %}} globally. There are three workarounds:
 
@@ -279,7 +279,7 @@ set NODE_TLS_REJECT_UNAUTHORIZED 0
 
 This section includes troubleshooting for package manager issues.
 
-### Error: Failed to npm install <package> (code 243)
+### Error: Failed to npm install `<package>` (code 243)
 
 This is likely an "EACCES" error that affects macOS and Linux users in which npm cannot write to its cache directory due to a file permission issue.
 

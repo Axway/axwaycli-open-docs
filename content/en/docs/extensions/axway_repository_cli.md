@@ -82,7 +82,6 @@ docker.repository-dev.axwaytest.net/docker-test-34/apimanagement/anm2:5         
 docker.repository-dev.axwaytest.net/docker-test-3/apimanagement/anm:7.6.3                 Test Firewall/Secure Msgr  test          Lorem ipsum dolor sit amet, consec...
 ```
 
-
 ### Docker pull
 
 Pulls a Docker image.
@@ -278,7 +277,6 @@ axway repository helm unregister
 
 This reverses registering [http://helm.repository.axway.com](http://helm.repository.axway.com) to your local Helm as the Helm registry and authenticating you on your local Helm CLI.
 
-
 ## Files and packages
 
 The Axway Repository CLI allows you to list, pull, search, and download files and packages from the Axway Central Repository.
@@ -343,7 +341,6 @@ axway repository file pull <ID> [options] [<OUTPUT>]
 
 * `--fileid` - File unique identifier
 * `--filename` - Output file name
-
 
 ### Files info
 
