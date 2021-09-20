@@ -135,6 +135,12 @@ The most likely culprit is a permission issue accessing the npm home directory `
 npm i -g --unsafe-perm axway
 ```
 
+### HTTPError: Failed to authenticate: You are not a member of any active organizations. Please contact your administrator or the platform support team. (403)
+
+This issue occurs when logging in using a service account along with your platform tooling credentials. In order to authenticate with the platform, your organization must have one of the following subscriptions: "Application Development", "Runtime Servies", "Cloud Capacity", or "Amplify (base)".
+
+Please create a ticket in the [Axway Support Portal](https://support.axway.com/) to have your organization provisioned with the appropriate subscription.
+
 ## Installation issues
 
 This section includes troubleshooting for installation issues.
