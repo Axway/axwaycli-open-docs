@@ -9,7 +9,7 @@ siblings_only: true
 
 The {{% variables/axway_cli_prod_name %}} `org` command allows you to rename the organization, manage organization users, and view organization information.
 
-The `org` command requires you to be authenticated into a platform account. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
+You must authenticate into a platform account to use the `org` command. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
 
 ## Usage
 
