@@ -1,7 +1,7 @@
 ---
 title: Quick start
 linkTitle: Quick start
-description: Install the Axway CLI or upgrade from the Amplify CLI and start using the CLI and its components. 
+description: Install the Axway CLI or upgrade from the Amplify CLI and start using the CLI and its components.
 weight: 10
 date: 2021-07-09
 ---
@@ -130,3 +130,15 @@ axway pm list
 ```
 
 Refer to the [package management](/docs/package_management/) page for more information.
+
+## Telemetry
+
+The Axway CLI has a telemetry system that collects anonymous data which is used to improve Axway products. We use this data to determine product roadmaps, feature deprecations, and crash reporting.
+
+Data collected includes your operating system, CPU architecture, Node.js version, Axway CLI version, installed CLI extensions, command invoked, and randomly generated machine and session ids. Sensitive information including your username, email address, and paths are redacted.
+
+Axway does __not__ collect your personal information, link your activity to your Axway account, capture environment variables, or unique machine identifiers such as the MAC address or serial number.
+
+Telemetry is __disabled__ by default. You can enable telemetry by running `axway telemetry --enable` or disable it by running `axway telemetry --disable`.
+
+Telemetry is always disabled if the environment variable `TELEMETRY_DISABLED=1` is set or when running from a well known continuous integration environment.
