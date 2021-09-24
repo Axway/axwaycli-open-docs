@@ -18,13 +18,15 @@ With the {{% variables/axway_cli_prod_name %}} you can:
 
 ## Requirements
 
-Axway CLI 2.x.x supports the following platforms:
+Axway CLI supports the following platforms:
 
-| Operating System | Architecture |
+| Axway CLI Version | Operating System |
 | --- | --- |
-| Linux | 64-bit<br /><br />32-bit |
-| macOS | 64-bit |
-| Windows | 64-bit<br /><br />32-bit |
+| 2.x - 3.x | Linux (64-bit) |
+| 2.x | Linux (32-bit) |
+| 2.x - 3.x | macOS (64-bit) |
+| 2.x - 3.x | Windows (64-bit) |
+| 2.x | Windows (32-bit) |
 
 The system requirements are:
 
