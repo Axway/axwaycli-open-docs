@@ -141,6 +141,12 @@ This issue occurs when logging in using a service account along with your platfo
 
 Please create a ticket in the [Axway Support Portal](https://support.axway.com/) to have your organization provisioned with the appropriate subscription.
 
+### TypeError: Expected code for interactive authentication to be a non-empty string
+
+This is an internal error that can occur when the Axway CLI refreshes an expired access token while running an extension CLI command that uses an incompatible dependency.
+
+To resolve this issue, run `npm i -g axway` to update your Axway CLI and run `axway pm update` to update your CLI extensions.
+
 ## Installation issues
 
 This section includes troubleshooting for installation issues.

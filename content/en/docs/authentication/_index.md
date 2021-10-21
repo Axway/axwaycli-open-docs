@@ -76,7 +76,7 @@ axway auth login
 
 Authenticate headlessly without needing to launch a web browser. You must specify either a Client Secret or a PEM formatted private key along with your Platform Tooling Credentials. You will also need to know your service account's Client ID such as "DOSA_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx".
 
-Your username is your email address. You can set or change your password on the Tooling Credentials page: .[https://platform.axway.com/#/user/credentials](https://platform.axway.com/#/user/credentials). For more information, refer to [Configuring Tooling Credentials](https://docs.axway.com/bundle/Amplify_Platform_Management_allOS_en/page/configuring_tooling_credentials.html).
+Your username is your email address. You can set or change your password on the Tooling Credentials page: [https://platform.axway.com/#/user/credentials](https://platform.axway.com/#/user/credentials). For more information, refer to [Configuring Tooling Credentials](https://docs.axway.com/bundle/Amplify_Platform_Management_allOS_en/page/configuring_tooling_credentials.html).
 
 ```
 axway auth login --client-id <id> --client-secret <key> --username <email>
