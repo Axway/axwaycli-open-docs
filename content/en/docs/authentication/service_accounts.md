@@ -9,7 +9,13 @@ siblings_only: true
 
 The {{% variables/axway_cli_prod_name %}} `service-account` command allows you to create and manage service accounts, generate public/private keypairs, and assign teams.
 
-You must authenticate into a platform account to use the `service-account` command. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
+You must be authenticated into a platform account to use the `service-account` command. If your platform account is not the default account, you need to pass in the `--account` argument or set your platform account as the default for your session using the `axway auth switch` command.
+
+When authenticating using a service account in a headless environment, such as a SSH terminal, you must set the token store type to "file":
+
+```
+axway config set auth.tokenStoreType file
+```
 
 ## Usage
 

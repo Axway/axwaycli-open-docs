@@ -12,7 +12,8 @@ With the {{% variables/axway_cli_prod_name %}} you can:
 
 * Install and manage additional Axway command line programs
 * Authenticate against the Amplify API Management Platform
-* Configure your local development settings
+* Manage organizations, users, and teams
+* Create service accounts for headless environments
 * Automate {{% variables/axway_cli_prod_name %}} commands from other scripting languages
 * Choose any authenticated account per command
 
