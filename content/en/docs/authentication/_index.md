@@ -140,7 +140,7 @@ axway auth logout [options] [<accounts...>]
 
 Once authenticated, you can set the default account, organization, and current team to use for `axway` commands.
 
-Only platform accounts have an organizations. If the selected account is a service account, then the organization selection is skipped.
+Only platform accounts have organizations. If the selected account is a service account, then the organization selection is skipped.
 
 Changing the current team will only affect your local machine and does not change the actual default team.
 
