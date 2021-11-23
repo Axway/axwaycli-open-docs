@@ -67,7 +67,7 @@ axway auth login
 
 This issue is caused when the {{% variables/axway_cli_prod_name %}} attempts to install the `keytar` library and you are using a proxy server that uses a self-signed certificate. By default, Node.js (and npm) error when making an HTTPS request to a server that has a TLS certificate that is signed by an unknown authority. There are two workarounds.
 
-1\. Disable secure token storage:
+1\. Bypass the system's keychain for storing the token store's key:
 
 ```
 axway config set auth.tokenStoreType file

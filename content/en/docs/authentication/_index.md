@@ -6,7 +6,15 @@ weight: 20
 date: 2021-07-09
 ---
 
-The {{% variables/axway_cli_prod_name %}} `auth` command allows you to authenticate with the {{% variables/platform_prod_name %}} under one or more accounts and switch between them.
+The {{% variables/axway_cli_prod_name %}} `auth` command allows you to authenticate with the {{% variables/platform_prod_name %}} under one or more accounts and switch between them. You can log in using your platform account as well as one or more [service accounts](https://docs.axway.com/bundle/axwaycli-open-docs/page/docs/authentication/service_accounts/index.html) at the same time.
+
+To log in using a platform account, a desktop web browser is required. Headless environments, such as a SSH terminal, are not supported when authenticating into platform accounts.
+
+A service account can be used for both desktop and headless environments. However, if authenticating in a headless environment, you must set the token store type to "file":
+
+```
+axway config set auth.tokenStoreType file
+```
 
 ## Usage
 
@@ -24,7 +32,7 @@ axway auth <command> [options]
 
 ### ls, list
 
-Displays a list of all authenticated accounts.
+Displays a list of all authenticated accounts, their selected platform organization, and the current team.
 
 ```
 axway auth ls [options]
@@ -41,6 +49,8 @@ axway auth list [options]
 Authenticates the {{% variables/axway_cli_prod_name %}} with the {{% variables/platform_prod_name %}} as either a platform account or service account.
 
 You can simultaneously log into a platform account (via the web browser) as well as multiple platform and service accounts using distinct client IDs.
+
+Once authenticated, the account's current team is set to its configured default team to use for "axway" commands.
 
 ```
 axway auth login [options]
@@ -128,7 +138,11 @@ axway auth logout [options] [<accounts...>]
 
 ### switch
 
-Once authenticated into at least one account, you can set the default account and organization to use for `axway` commands.
+Once authenticated, you can set the default account, organization, and current team to use for `axway` commands.
+
+Only platform accounts have organizations. If the selected account is a service account, then the organization selection is skipped.
+
+Changing the current team will only affect your local machine and does not change the actual default team.
 
 ```
 axway auth switch [options]
@@ -138,13 +152,12 @@ axway auth switch [options]
 
 * `--account <name>` - The account to switch to
 * `--json` - Outputs selected account as JSON
-* `--org <id|guid|name>` - The platform account's organization to switch to
-
-Only platform accounts have an organizations. If the selected account is a service account, then the organization selection is skipped.
+* `--org <id|guid|name>` - The platform organization to switch to
+* `--team <guid|name>` - The team to use for the selected account
 
 ### whoami
 
-Display the currently selected account and organization.
+Display the currently selected account, organizations, roles, and teams.
 
 ```
 axway auth whomai
