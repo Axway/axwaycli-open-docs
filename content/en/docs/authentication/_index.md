@@ -95,7 +95,7 @@ axway auth login --client-id <id> --client-secret <key> --username <email>
 Or
 
 ```
-axway auth login --client-id <id> --secret-file /path/to/pem/file -username <email>
+axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email>
 ```
 
 The commands above will prompt you for your password. You may also specify `--password <pass>` for a non-interactive login.
@@ -115,7 +115,7 @@ axway auth login --client-id <id> --client-secret <key> --username <email>
 ### PEM formatted private key
 
 ```
-axway auth login --client-id <id> --secret-file /path/to/pem/file -username <email>
+axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email>
 ```
 
 #### Authentication expiration
