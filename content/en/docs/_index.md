@@ -1,10 +1,11 @@
 ---
 title: Axway CLI
 linkTitle: Axway CLI
-description: The Axway CLI is a unified command line interface that provides a single entry-point for authentication, package management, and other Axway products.
 weight: 10
 date: 2021-07-09
 ---
+
+The Axway CLI is a unified command line interface that provides a single entry-point for authentication, package management, and other Axway products.
 
 ## Overview
 
