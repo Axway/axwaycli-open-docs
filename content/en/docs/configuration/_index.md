@@ -9,8 +9,6 @@ Use the Axway CLI config command to manage configuration values.
 
 ## Settings
 
-Use the Axway CLI config command to manage configuration values.
-
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `auth.serverHost` | string | <span style="white-space:nowrap">`"localhost"`</span> | The hostname the local web server should listen on and await the successful login browser redirect. |
