@@ -1,12 +1,11 @@
 ---
 title: Extensions
-linkTitle: Extensions
-description: Install additional packages to extend the Axway CLI.
+linkTitle: Extensions 
 weight: 60
 date: 2021-07-09
 ---
 
-This following packages extend the {{% variables/axway_cli_prod_name %}}.
+Install additional packages to extend the {{% variables/axway_cli_prod_name %}}.
 
 * [Axway Central CLI](https://docs.axway.com/bundle/amplify-central/page/docs/integrate_with_central/cli_central/index.html) (documented in the Axway Central CLI guide)
 * [Axway Edge Agent CLI](/docs/extensions/axway_edge_agent_cli/)

@@ -1,7 +1,6 @@
 ---
 title: Service accounts
 linkTitle: Service accounts
-description: Use the Axway CLI service-account command to create and manage service accounts.
 weight: 10
 date: 2021-08-30
 siblings_only: true
