@@ -52,6 +52,27 @@ You may specify the service account by client id or name as well as the team by 
 * `--json` - Outputs result as JSON.
 * `--org <name|id|guid>` - The organization name, id, or guid.
 
+
+### generate-keypair
+
+Creates a pem formatted public/private key pair.
+
+```
+axway service-account generate-keypair
+
+axway service-account generate-keypair --public-key <file> --private-key <file> --yes
+```
+
+This command is useful if you do not already have a public/private keypair and you are automating the service account creation.
+
+#### generate-keypair options
+
+* `--json` - Outputs result as JSON.
+* `--private-key <path>` - The file to output the private key to.
+* `--public-key <path>` - The file to output the public key to.
+* `--yes` - Automatic yes to overwrite existing output files and run non-interactively.
+
+
 ### create
 
 Creates a new service account. A service account requires a name and either a client secret key or a PEM formatted public key.
@@ -80,25 +101,6 @@ Use double quotes around values that contain spaces or special characters. Run `
 * `--public-key <path>` - The path to the public key.
 * `--role <role>` - Assign one or more organization roles to the service account.
 * `--secret <key>` - A custom client secret key.
-
-### generate-keypair
-
-Creates a pem formatted public/private key pair.
-
-```
-axway service-account generate-keypair
-
-axway service-account generate-keypair --public-key <file> --private-key <file> --yes
-```
-
-This command is useful if you do not already have a public/private keypair and you are automating the service account creation.
-
-#### generate-keypair options
-
-* `--json` - Outputs result as JSON.
-* `--private-key <path>` - The file to output the private key to.
-* `--public-key <path>` - The file to output the public key to.
-* `--yes` - Automatic yes to overwrite existing output files and run non-interactively.
 
 ### ls, list
 
