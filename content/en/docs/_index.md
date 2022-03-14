@@ -5,7 +5,11 @@ weight: 10
 date: 2021-07-09
 ---
 
-The Axway CLI is a unified command line interface that provides a single entry-point for authentication, package management, and other Axway products.
+The Axway CLI (Command Line Interface) is a framework that provides a single CLI enty point for common functionality of the Amplify platform. The framework provides authentication to Amplify, organization & user management and package management. Packages are extensions to the Axway CLI that extend the functionality of the CLI by providing features for additional services provided by the Amplify platform. The following are the available packages:
+* [Axway Central CLI](https://docs.axway.com/bundle/amplify-central/page/docs/integrate_with_central/cli_central/index.html) 
+* [Axway Edge Agent CLI](/docs/extensions/axway_edge_agent_cli/)
+* [Axway Repository CLI](/docs/extensions/axway_repository_cli/)
+* [{{% variables/apibuilder_prod_name %}} CLI](https://docs.axway.com/bundle/api-builder/page/docs/developer_guide/cli/index.html) (documented in the {{% variables/apibuilder_prod_name %}} 4.x guide)
 
 ## Overview
 
@@ -18,7 +22,7 @@ With the {{% variables/axway_cli_prod_name %}} you can:
 * Automate {{% variables/axway_cli_prod_name %}} commands from other scripting languages
 * Choose any authenticated account per command
 
-## Requirements
+## Prerequisites
 
 Axway CLI supports the following platforms:
 
