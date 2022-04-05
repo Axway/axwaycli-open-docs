@@ -159,7 +159,7 @@ axway auth switch [options]
 Display the currently selected account, organizations, roles, and teams.
 
 ```
-axway auth whomai
+axway auth whoami
 ```
 
 #### whoami options
