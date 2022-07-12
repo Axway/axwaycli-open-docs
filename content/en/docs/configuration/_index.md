@@ -21,7 +21,7 @@ Use the Axway CLI config command to manage configuration values.
 
 ## Usage
 
-```
+``` bash
 axway config [--json] <action> [<key>] [<value>]
 ```
 
@@ -44,7 +44,7 @@ axway config [--json] <action> [<key>] [<value>]
 
 Returns a config setting.
 
-```
+``` bash
 axway config get <key>
 ```
 
@@ -52,9 +52,11 @@ axway config get <key>
 
 Displays a list of all installed packages.
 
-```
+``` bash
 axway config ls
+```
 
+``` bash
 axway config list
 ```
 
@@ -62,7 +64,7 @@ axway config list
 
 Removes a value from the end of a list.
 
-```
+``` bash
 axway config pop <key>
 ```
 
@@ -70,7 +72,7 @@ axway config pop <key>
 
 Adds a value to the end of a list. If there is no existing value, a new list is created. If a non-list value exists, it is converted to a list and the new value is appended.
 
-```
+``` bash
 axway config pop <key> <value>
 ```
 
@@ -78,9 +80,11 @@ axway config pop <key> <value>
 
 Deletes a config setting.
 
-```
+``` bash
 axway config rm <key>
+```
 
+``` bash
 axway config delete <key>
 ```
 
@@ -88,7 +92,7 @@ axway config delete <key>
 
 Sets a config value. If a value already exists, the existing value is overwritten.
 
-```
+``` bash
 axway config set <key> <value>
 ```
 
@@ -96,7 +100,7 @@ axway config set <key> <value>
 
 Removes a value from the beginning of a list.
 
-```
+``` bash
 axway config shift <key>
 ```
 
@@ -104,6 +108,6 @@ axway config shift <key>
 
 Adds a value to the beginning of a list. If there is no existing value, a new list is created. If a non-list value exists, it is converted to a list and the new value is prepended.
 
-```
+``` bash
 axway config unshift <key> <value>
 ```

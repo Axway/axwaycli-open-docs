@@ -12,15 +12,17 @@ You must be authenticated into a platform account to use the `service-account` c
 
 When authenticating using a service account in a headless environment, such as a SSH terminal, you must set the token store type to "file":
 
-```
+``` bash
 axway config set auth.tokenStoreType file
 ```
 
 ## Usage
 
-```
+``` bash
 axway service-account
+```
 
+``` bash
 axway service-account <command> [options]
 ```
 
@@ -40,7 +42,7 @@ axway service-account <command> [options]
 
 Adds an existing team to a service account. When assigning a team, you must also specify the team role.
 
-```
+``` bash
 axway service-account add-team <client-id/name> <team-guid/name> <role>
 ```
 
@@ -56,11 +58,15 @@ You may specify the service account by client id or name as well as the team by 
 
 Creates a new service account. A service account requires a name and either a client secret key or a PEM formatted public key.
 
-```
+``` bash
 axway service-account create --name <value> --public-key <path>
+```
 
+``` bash
 axway service-account create --name <value> --secret <key>
+```
 
+``` bash
 axway service-account create --name <value> --secret <key> --desc "<description>" --role <role1> --role <role2>
 ```
 
@@ -85,9 +91,11 @@ Use double quotes around values that contain spaces or special characters. Run `
 
 Creates a pem formatted public/private key pair.
 
-```
+``` bash
 axway service-account generate-keypair
+```
 
+``` bash
 axway service-account generate-keypair --public-key <file> --private-key <file> --yes
 ```
 
@@ -104,9 +112,11 @@ This command is useful if you do not already have a public/private keypair and y
 
 Lists all service accounts.
 
-```
+``` bash
 axway service-account ls
+```
 
+``` bash
 axway service-account list
 ```
 
@@ -120,9 +130,11 @@ axway service-account list
 
 Removes a service account.
 
-```
+``` bash
 axway service-account rm <client-id/name>
+```
 
+``` bash
 axway service-account remove <client-id/name>
 ```
 
@@ -138,7 +150,7 @@ You may specify the service account by client id or name. Use double quotes arou
 
 Removes a team from a service account.
 
-```
+``` bash
 axway service-account remove-team <client-id/name> <team-guid/name>
 ```
 
@@ -154,7 +166,7 @@ You may specify the service account by client id or name as well as the team by 
 
 View available service account organization and teams roles based on the specified organization.
 
-```
+``` bash
 axway service-account roles
 ```
 
@@ -168,11 +180,15 @@ axway service-account roles
 
 Updates service account information. Multiple values may be changed in a single call.
 
-```
+``` bash
 axway service-account update <name/client-id> --name <new_name> --desc <new_desc> --role <new_role1> --role <new_role2>
+```
 
+``` bash
 axway service-account update <name/client-id> --secret <new_secret>
+```
 
+``` bash
 axway service-account update <name/client-id> --public-key <new_public_key_from_file>
 ```
 
@@ -195,9 +211,11 @@ You may specify the service account by client id or name. Use double quotes arou
 
 View service account details.
 
-```
+``` bash
 axway service-account view <name/client-id>
+```
 
+``` bash
 axway service-account view <name/client-id> --json
 ```
 

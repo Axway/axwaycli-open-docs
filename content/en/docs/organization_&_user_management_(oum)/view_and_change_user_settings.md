@@ -9,9 +9,11 @@ You must authenticate into a platform account to use the `user` command. If your
 
 ## Usage
 
-```
+``` bash
 axway user
+```
 
+``` bash
 axway user <command> [--account <name>] [options]
 ```
 
@@ -26,7 +28,7 @@ axway user <command> [--account <name>] [options]
 
 Displays user events such as role changes and security related events.
 
-```
+``` bash
 axway user activity [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 ```
 
@@ -41,7 +43,7 @@ axway user activity [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 
 Opens a web browser to the change your password page.
 
-```
+``` bash
 axway user credentials
 ```
 
@@ -49,7 +51,7 @@ axway user credentials
 
 Allows a user to change their first name, last name, and phone number.
 
-```
+``` bash
 axway user update [--firstname <value>] [--lastname <value>] [--phone <value>]
 ```
 
@@ -65,7 +67,7 @@ axway user update [--firstname <value>] [--lastname <value>] [--phone <value>]
 
 Displays the user's account information.
 
-```
+``` bash
 axway user view
 ```
 

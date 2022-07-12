@@ -12,9 +12,11 @@ You must authenticate into a platform account to use the `org` command. If your 
 
 ## Usage
 
-```
+``` bash
 axway org
+```
 
+``` bash
 axway org <command> [--account <name>] [options]
 ```
 
@@ -37,7 +39,7 @@ axway org <command> [--account <name>] [options]
 
 Displays organization events such as organization changes and security related events.
 
-```
+``` bash
 axway org activity [<org>] [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 ```
 
@@ -54,7 +56,7 @@ By default, the `activity` command will use your currently selected organization
 
 Opens the web browser to the identity provider settings page for the specified organization.
 
-```
+``` bash
 axway org idp [<org>]
 ```
 
@@ -68,9 +70,11 @@ By default, the `idp` command will use your currently selected organization. To
 
 Lists all associated organizations for the current authenticated platform account.
 
-```
+``` bash
 axway org ls
+```
 
+``` bash
 axway org list
 ```
 
@@ -83,7 +87,7 @@ axway org list
 
 Renames an organization.
 
-```
+``` bash
 axway org rename <org> <new_name>
 ```
 
@@ -98,7 +102,7 @@ You may specify the organization by name or guid. Use double quotes around the n
 
 Displays organization usage such as the number of API calls and push notifications.
 
-```
+``` bash
 axway org usage [<org>] [--from YYYY-MM-DD] [--to YYYY-MM-DD]
 ```
 
@@ -115,7 +119,7 @@ By default, the `usage` command will use your currently selected organization. T
 
 Displays the help screen for managing organization users.
 
-```
+``` bash
 axway org user
 ```
 
@@ -123,7 +127,7 @@ axway org user
 
 Adds or invites a user to an organization.
 
-```
+``` bash
 axway org user add <org> <email> --role <platform_role> --role <additional_role>
 ```
 
@@ -143,7 +147,7 @@ An organization user must be assigned a platform role and optionally a product s
 
 Lists all users for a specific organization.
 
-```
+``` bash
 axway org user list <org>
 ```
 
@@ -158,7 +162,7 @@ By default, the `user list` command will use your currently selected organizatio
 
 Removes a user from an organization.
 
-```
+``` bash
 axway org user remove <org> <user>
 ```
 
@@ -173,7 +177,7 @@ You may specify the organization by name or guid as well as specify the user by 
 
 Displays all available users roles at the organization level.
 
-```
+``` bash
 axway org user roles
 ```
 
@@ -186,7 +190,7 @@ axway org user roles
 
 Updates a user's organization roles.
 
-```
+``` bash
 axway org user update <org> <email> --role <platform_role> --role <additional_role>
 ```
 
@@ -204,7 +208,7 @@ An organization user must be assigned a platform role and optionally a product s
 
 Displays information about an organization.
 
-```
+``` bash
 axway org view [<org>]
 ```
 

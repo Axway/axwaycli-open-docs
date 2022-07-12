@@ -15,7 +15,7 @@ The Edge Agent CLI requires {{% variables/axway_cli_prod_name %}} 2.0.0 or later
 
 To install the Axway Edge Agent CLI, run the following command from the terminal:
 
-```
+``` bash
 axway pm install @axway/axway-edge-agent-cli
 ```
 
@@ -23,13 +23,13 @@ axway pm install @axway/axway-edge-agent-cli
 
 To get a list of the available Axway Edge Agent CLI commands, run the following.
 
-```
+``` bash
 axway edge-agent
 ```
 
 ## Usage
 
-```
+``` bash
 axway edge-agent <commands> [options]
 ```
 
@@ -46,7 +46,7 @@ Edge Agent collects data continuously from your on-premises product, generates, 
 
 #### autoReport usage
 
-```
+``` bash
 axway edge-agent autoReport <clientId> <privateKey> <organizationId> <userId> [options]
 ```
 
@@ -79,7 +79,7 @@ Generates certificates for Edge Agent data ingestion.
 
 #### certs, certificates, ingestionCertificates usage
 
-```
+``` bash
 axway edge-agent certificates [options]
 ```
 
@@ -123,7 +123,7 @@ Generates an environment id that is used in the Edge Agent configuration as `en
 
 #### generateEnvId usage
 
-```
+``` bash
 axway edge-agent generateEnvId
 ```
 
@@ -139,7 +139,7 @@ Queries and exports a usage report.
 
 #### query, report, getReport usage
 
-```
+``` bash
 axway edge-agent query <from> [options] [<to>]
 ```
 

@@ -11,13 +11,13 @@ To log in using a platform account, a desktop web browser is required. Headless 
 
 A service account can be used for both desktop and headless environments. However, if authenticating in a headless environment, you must set the token store type to "file":
 
-```
+``` bash
 axway config set auth.tokenStoreType file
 ```
 
 ## Usage
 
-```
+``` bash
 axway auth <command> [options]
 ```
 
@@ -33,9 +33,11 @@ axway auth <command> [options]
 
 Displays a list of all authenticated accounts, their selected platform organization, and the current team.
 
-```
+``` bash
 axway auth ls [options]
+```
 
+``` bash
 axway auth list [options]
 ```
 
@@ -51,7 +53,7 @@ You can simultaneously log into a platform account (via the web browser) as well
 
 Once authenticated, the account's current team is set to its configured default team to use for "axway" commands.
 
-```
+``` bash
 axway auth login [options]
 ```
 
@@ -77,7 +79,7 @@ A platform account allows you to manage organizations, teams, and your user acco
 
 PKCE is the default authentication method. It will open a web browser to the {{% variables/platform_prod_name %}} login page.
 
-```
+``` bash
 axway auth login
 ```
 
@@ -87,13 +89,13 @@ Authenticate headlessly without needing to launch a web browser. You must specif
 
 Your username is your email address. You can set or change your password on the Tooling Credentials page: [https://platform.axway.com/#/user/credentials](https://platform.axway.com/#/user/credentials). For more information, refer to [Configuring tooling credentials](https://docs.axway.com/bundle/platform-management/page/docs/management_guide/configuring_and_managing_identity_providers/configuring_tooling_credentials/index.html).
 
-```
+``` bash
 axway auth login --client-id <id> --client-secret <key> --username <email>
 ```
 
 Or
 
-```
+``` bash
 axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email>
 ```
 
@@ -107,13 +109,13 @@ For additional options on configuring or authentication with service accounts, r
 
 #### Client service key
 
-```
+``` bash
 axway auth login --client-id <id> --client-secret <key> --username <email>
 ```
 
 ### PEM formatted private key
 
-```
+``` bash
 axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email>
 ```
 
@@ -127,7 +129,7 @@ If you logged in using the web browser authentication flow (PKCE), the Axway CLI
 
 Revokes access tokens for one, multiple, or all accounts.
 
-```
+``` bash
 axway auth logout [options] [<accounts...>]
 ```
 
@@ -143,7 +145,7 @@ Only platform accounts have organizations. If the selected account is a service 
 
 Changing the current team will only affect your local machine and does not change the actual default team.
 
-```
+``` bash
 axway auth switch [options]
 ```
 
@@ -158,7 +160,7 @@ axway auth switch [options]
 
 Display the currently selected account, organizations, roles, and teams.
 
-```
+``` bash
 axway auth whoami
 ```
 
