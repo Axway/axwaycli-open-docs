@@ -48,13 +48,13 @@ With the {{% variables/axway_cli_prod_name %}} you can install and manage additi
 
 The {{% variables/axway_cli_prod_name %}} will automatically import your Amplify CLI settings. However it will not import any installed packages. You will need to manually install them again. To get a list of your installed packages, run:
 
-```
+``` bash
 amplify pm ls
 ```
 
 For each package listed, install it under the {{% variables/axway_cli_prod_name %}} by running:
 
-```
+``` bash
 axway pm i <package_name>[@<version>]
 ```
 
@@ -62,7 +62,7 @@ axway pm i <package_name>[@<version>]
 
 The {{% variables/axway_cli_prod_name %}} has built-in help that can be accessed by passing `--help` into any command or by running:
 
-```
+``` bash
 axway
 ```
 
@@ -70,7 +70,7 @@ axway
 
 If you are behind a network proxy server, then you may need to set the proxy server URL by running the following command and replacing the username, password, proxy server URL, and port number.
 
-```
+``` bash
 axway config set network.proxy http://<username>:<password>@<proxy-server-url>:<port>
 ```
 
@@ -86,7 +86,7 @@ Refer to the [configuration](/docs/configuration/) page for more information.
 
 If your proxy server uses a self-signed TLS/SSL certificate, then you will need to disable certificate validation:
 
-```
+``` bash
 axway config set network.strictSSL false
 ```
 
@@ -100,7 +100,7 @@ npm config set strict-ssl false
 
 To log into the {{% variables/platform_prod_name %}}, run:
 
-```
+``` bash
 axway auth login
 ```
 
@@ -112,19 +112,19 @@ The {{% variables/axway_cli_prod_name %}} package manager allows you to search,
 
 To search for a package, run:
 
-```
+``` bash
 axway pm search
 ```
 
 To install a package, run:
 
-```
+``` bash
 axway pm install <package>[@<version>]
 ```
 
 To list installed packages, run:
 
-```
+``` bash
 axway pm list
 ```
 

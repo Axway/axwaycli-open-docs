@@ -16,19 +16,19 @@ There are two ways to authenticate with a service account: Client Secret and a P
 
 After selecting one of these methods, you then need to specify your platform tooling username and password. Your username is your email address. You can set or change your password on the Tooling Credentials page: [https://platform.axway.com/#/user/credentials](https://platform.axway.com/#/user/credentials). For more information, refer to [Configuring Tooling Credentials](https://docs.axway.com/bundle/Amplify_Platform_Management_allOS_en/page/configuring_tooling_credentials.html).
 
-```
+``` bash
 axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email> --password <pass>
 ```
 
 Or
 
-```
+``` bash
 axway auth login --client-id <id> --client-secret <key> --username <email> --password <pass>
 ```
 
 After authenticating, your session is valid for 30 minutes. Your automation script should check the exit code for all commands being run and the session expires, you will need to re-authenticate before resuming your tasks. You may also a timer that re-authenticates around 29 minutes so that your access tokens never expire. Note that if you attempt to re-authenticate before the previous access token has expired, you need to specify the `--force` login flag.
 
-```
+``` bash
 # how to force a login before access token is expired
 axway auth login --client-id <id> --secret-file /path/to/pem/file --username <email> --password <pass> --force
 ```
@@ -43,15 +43,15 @@ When running a command with the -`h` or --`help` flag, the help is displayed and
 
 Most {{% variables/axway_cli_prod_name %}} commands support the `--json` flag. When set, the data as well as any errors are output as JSON. You can pipe the output from one command into a tool such as jq ([https://stedolan.github.io/jq)](https://stedolan.github.io/jq))  and extract a specific value.
 
-```
+``` bash
 axway config ls --json
 ```
 
-```
+``` bash
 axway auth ls --json
 ```
 
-```
+``` bash
 axway org view --json
 ```
 

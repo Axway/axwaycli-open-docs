@@ -15,7 +15,7 @@ This section includes troubleshooting for authentication issues.
 
 The {{% variables/axway_cli_prod_name %}} by default will store your access tokens securely in a file on disk. On Linux, we use a library that requires `libsecret`. To install it, run:
 
-```bash
+```
 # Debian/Ubuntu:
 sudo apt-get install libsecret-1-dev
 
@@ -32,8 +32,11 @@ This is caused by a bug and occurs when your access token has expired, but your 
 
 The workaround is to log out and log back in:
 
-```
+``` bash
 axway auth logout
+```
+
+``` bash
 axway auth login
 ```
 
@@ -49,7 +52,7 @@ This error occurs when running an auth related command. The  `keytar`  library
 
 The `keytar` files are located at:
 
-```
+``` bash
 C:\Users\<username>\.axway\axway-cli\lib\keytar
 ```
 
@@ -59,8 +62,11 @@ This is caused by a bug and occurs when you think you have a valid access token,
 
 The workaround is to log out and log back in:
 
-```
+``` bash
 axway auth logout
+```
+
+``` bash
 axway auth login
 ```
 
@@ -70,7 +76,7 @@ This issue is caused when the {{% variables/axway_cli_prod_name %}} attempts to 
 
 1\. Bypass the system's keychain for storing the token store's key:
 
-```
+``` bash
 axway config set auth.tokenStoreType file
 ```
 
@@ -96,7 +102,7 @@ Or
 
 2. Disable the secure token store:
 
-```
+``` bash
 axway config set auth.tokenStoreType file
 ```
 
@@ -122,7 +128,7 @@ Or
 
 2. Disable the secure token store:
 
-```
+``` bash
 axway config set auth.tokenStoreType file
 ```
 
@@ -182,7 +188,7 @@ When installing the {{% variables/axway_cli_prod_name %}} on a macOS or Linux ma
 
 2. Change the file permissions of the global `npm` install path:
 
-    ```bash
+    ```
     sudo chmod -R $(whoami) /usr/local/bin /usr/local/lib/node_modules
 
     npm install -g axway
@@ -190,7 +196,7 @@ When installing the {{% variables/axway_cli_prod_name %}} on a macOS or Linux ma
 
 3. Change the `npm` global install path to your home directory:
 
-    ```bash
+    ```
     mkdir -p ~/.npm-global
 
     npm config set prefix "~/.npm-global"
@@ -223,7 +229,7 @@ This error can also occur on Windows machines when executing an auth related com
 
 The `keytar` files are located at:
 
-```
+``` bash
 C:\Users\<username>\.axway\axway-cli\lib\keytar
 ```
 
@@ -239,7 +245,7 @@ When installing the {{% variables/axway_cli_prod_name %}} on a macOS or Linux ma
 
 2. Change the file permissions of the global `npm` install path:
 
-    ```bash
+    ```
     sudo chmod -R $(whoami) /usr/local/bin /usr/local/lib/node_modules
 
     npm install -g axway
@@ -247,7 +253,7 @@ When installing the {{% variables/axway_cli_prod_name %}} on a macOS or Linux ma
 
 3. Change the `npm` global install path to your home directory:
 
-    ```bash
+    ```
     mkdir -p ~/.npm-global
 
     npm config set prefix "~/.npm-global"

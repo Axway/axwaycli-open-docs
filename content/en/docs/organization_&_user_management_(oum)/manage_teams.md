@@ -11,9 +11,11 @@ You must authenticate into a platform account to use the `team` command. If your
 
 ## Usage
 
-```
+``` bash
 axway team
+```
 
+``` bash
 axway team <command> [--account <name>] [options]
 ```
 
@@ -35,7 +37,7 @@ axway team <command> [--account <name>] [options]
 
 Adds a team to an organization.
 
-```
+``` bash
 axway team add <org> <team_name> [options]
 ```
 
@@ -53,9 +55,11 @@ You may specify the organization by name or guid. Use double quotes around the t
 
 Lists organization teams.
 
-```
+``` bash
 axway team ls [<org>]
+```
 
+``` bash
 axway team list [<org>]
 ```
 
@@ -70,7 +74,7 @@ By default, the `list` command will use your currently selected organization. To
 
 Removes a team from an organization.
 
-```
+``` bash
 axway team remove <org> <team>
 ```
 
@@ -85,7 +89,7 @@ You may specify the organization by name or guid. Specify the team by its guid.
 
 Updates team information such as whether the team is the default, the team name, the description, and the associated tags.
 
-```
+``` bash
 axway team update <org> <team> [options]
 ```
 
@@ -104,7 +108,7 @@ You may specify the organization by name or guid. Specify the team by its guid.
 
 Displays the help screen for managing team users.
 
-```
+``` bash
 axway team user
 ```
 
@@ -112,7 +116,7 @@ axway team user
 
 Adds a user to an organization.
 
-```
+``` bash
 axway team user add <org> <email> --role <platform_role> --role <additional_role>
 ```
 
@@ -132,7 +136,7 @@ An team user must be assigned a platform role and optionally a product specific 
 
 Lists all users in a team.
 
-```
+``` bash
 axway team user list <org>
 ```
 
@@ -147,7 +151,7 @@ You may specify the organization by name or guid.
 
 Removes a user from a team.
 
-```
+``` bash
 axway team user remove <org> <team> <user>
 ```
 
@@ -162,7 +166,7 @@ You may specify the organization by name or guid as well as specify the team by 
 
 Displays all available users roles at the team level.
 
-```
+``` bash
 axway team user roles
 ```
 
@@ -175,7 +179,7 @@ axway team user roles
 
 Updates a user's team roles.
 
-```
+``` bash
 axway team user update <org> <team> <user> --role <platform_role> --role <additional_role>
 ```
 
@@ -193,7 +197,7 @@ An organization user must be assigned a platform role and optionally a product s
 
 Displays information about a team.
 
-```
+``` bash
 axway team view <org> <team>
 ```
 
