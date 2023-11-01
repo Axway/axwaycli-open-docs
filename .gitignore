@@ -5,3 +5,5 @@ node_modules/
 tech-doc-hugo
 .DS_Store
 yarn.lock
+.hugo_build.lock
+package-lock.json
