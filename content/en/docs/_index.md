@@ -35,7 +35,7 @@ Axway CLI supports the following platforms:
 | 2.x - 3.x | Windows (64-bit) |
 | 2.x | Windows (32-bit) |
 
-The system requirements are:
+The system requirements are: (update requirements)
 
 | Component | Version |
 | --- | --- |
