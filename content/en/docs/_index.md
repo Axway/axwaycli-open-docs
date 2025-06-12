@@ -39,8 +39,8 @@ The system requirements are:
 
 | Component | Version |
 | --- | --- |
-| [Node.js](https://nodejs.org/) | 14.15.0 LTS or later |
-| npm | 6.14.8 or later |
+| [Node.js](https://nodejs.org/) | 20.18.2 LTS or later |
+| npm | 10.8.2 or later |
 
 {{% alert title="Note" color="primary" %}}Operating systems and architecture support varies across {{% variables/axway_cli_prod_name %}} products. Refer to each product's requirements for more information.{{% /alert %}}
 
