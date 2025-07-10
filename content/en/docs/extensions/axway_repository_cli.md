@@ -111,7 +111,7 @@ To use the {{% variables/axway_cli_prod_name %}}, you must run the following com
 axway repository docker register
 ```
 
-This registers `http://docker.repository.axway.com` to your local Docker as the Docker registry and authenticates you on your local Docker CLI.
+This registers the Docker repository, located on <https://repository.axway.com>, to your local Docker as the Docker registry and authenticates you on your local Docker CLI.
 
 ### Docker search
 
@@ -155,7 +155,7 @@ Unregisters the Axway Docker repository to your local native Docker CLI.
 axway repository docker unregister
 ```
 
-This reverses registering [http://docker.repository.axway.com](http://docker.repository.axway.com) to your local Docker as the Docker registry and authenticating you on your local Docker CLI.
+This reverses registering the Docker repository, located on <https://repository.axway.com>, from your local Docker CLI.
 
 ## Helm
 
@@ -231,7 +231,7 @@ To use the {{% variables/axway_cli_prod_name %}}, you must run the following com
 axway repository helm register
 ```
 
-This registers [http://helm.repository.axway.com](http://helm.repository.axway.com) to your local Helm as the Helm registry and authenticates you on your local Helm CLI.
+This registers the Helm repository, located on <https://repository.axway.com>, to your local Helm as the Helm registry and authenticates you on your local Helm CLI.
 
 ### Helm search
 
@@ -276,7 +276,7 @@ Unregisters the Axway Helm repository to your local native Helm CLI.
 axway repository helm unregister
 ```
 
-This reverses registering [http://helm.repository.axway.com](http://helm.repository.axway.com) to your local Helm as the Helm registry and authenticating you on your local Helm CLI.
+This reverses registering the Helm repository, located on <https://repository.axway.com>, from your local Helm CLI.
 
 ## Files and packages
 
